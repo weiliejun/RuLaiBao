@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingBottom="15dip"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_hot_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="想不到标题叫什么"
+            android:textSize="16sp"
+            android:textColor="@color/txt_black1"
+            />
+
+        <TextView
+            android:id="@+id/tv_hot_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:text="世上本没有幻术，学的人多了，就成了幻术，世上本没有幻术，学的人多了，就成了幻术，世上本没有幻术，学的人多了，就成了幻术"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:lineSpacingMultiplier="1.2"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+
+            >
+            <TextView
+                android:id="@+id/tv_hot_asker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提问者："
+                android:textColor="@color/txt_mark_gray"
+                />
+            <TextView
+                android:id="@+id/tv_hot_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_hot_asker"
+                android:text="渣渣辉"
+                android:textColor="@color/txt_black1"
+                />
+
+            <TextView
+                android:id="@+id/tv_hot_ask_leave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="条留言"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/txt_mark_gray"
+                />
+
+            <TextView
+                android:id="@+id/tv_hot_ask_leave_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/tv_hot_ask_leave"
+                android:text="99"
+                android:textColor="@color/txt_black1"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dip"
+        android:background="@color/gray_light"
+        />
+
+</LinearLayout>

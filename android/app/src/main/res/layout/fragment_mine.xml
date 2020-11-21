@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_light"
+            android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_light"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/net_fail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_gray_new"
+            android:paddingBottom="18dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/bg_mine_yellow"/>
+
+                <!--顶部的设置、消息-->
+                <RelativeLayout
+                    android:id="@+id/rl_setting_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:paddingTop="14dp">
+
+                    <ImageView
+                        android:id="@+id/iv_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        android:src="@mipmap/icon_mine_setting"/>
+
+                    <ImageView
+                        android:id="@+id/iv_news"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        android:src="@mipmap/icon_mine_news"/>
+                </RelativeLayout>
+
+                <!--未读消息总数不为0时显示-->
+                <TextView
+                    android:id="@+id/tv_message_total"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/shape_circle_red"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:visibility="gone"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@id/rl_setting_top"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:background="@mipmap/bg_mine_rectangle">
+
+                    <ImageView
+                        android:id="@+id/iv_user_photo"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/icon_user_photo"/>
+
+                    <!--用户登录后显示的姓名、手机号等 布局-->
+                    <LinearLayout
+                        android:id="@+id/ll_user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_user_photo"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_user_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_user_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/txt_black1"
+                                android:textSize="16sp"/>
+
+                            <ImageView
+                                android:id="@+id/iv_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@id/tv_user_name"
+                                android:src="@mipmap/icon_uncertified"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv_user_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/rl_user_name"
+                            android:layout_marginTop="5dp"
+                            android:text=""
+                            android:textColor="@color/txt_black2"
+                            android:textSize="16sp"/>
+                    </LinearLayout>
+
+                    <!--未登录时显示的 布局-->
+                    <TextView
+                        android:id="@+id/tv_mine_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_user_photo"
+                        android:layout_centerHorizontal="true"
+                        android:padding="14dp"
+                        android:text="@string/btn_login"
+                        android:textColor="@color/main_color_yellow"
+                        android:textSize="20sp"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!--累计佣金 布局-->
+        <RelativeLayout
+            android:id="@+id/rl_total_commission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="30dp"
+                android:paddingTop="30dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_total_commission"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="0.00"
+                        android:textColor="@color/main_color_yellow"
+                        android:textSize="32sp"/>
+
+                    <ImageView
+                        android:id="@+id/iv_show_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/tv_total_commission"
+                        android:padding="15dp"
+                        android:src="@mipmap/icon_open_password"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_horizontal"
+                    android:text="累计佣金（元）"
+                    android:textColor="@color/txt_black1"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_commission_right_arrow"
+                style="@style/iv_right_arrow"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="12dp"/>
+
+
+            <View
+                style="@style/v_line"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <!--我的保单 布局-->
+        <RelativeLayout
+            android:id="@+id/rl_my_policy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp">
+
+            <ImageView
+                android:id="@+id/iv_my_policy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/icon_mine_my_policy"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/iv_my_policy"
+                android:text="@string/txt_my_policy"
+                android:textColor="@color/txt_black1"
+                android:textSize="16sp"/>
+
+            <ImageView
+                style="@style/iv_right_arrow"/>
+        </RelativeLayout>
+
+        <View
+            style="@style/v_line"
+            android:layout_alignParentBottom="true"/>
+
+        <!--我的保单的四种状态 布局-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="11dp"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:id="@+id/tv_check_pending"
+                style="@style/tv_status_policy"
+                android:drawableTop="@mipmap/icon_check_pending"
+                android:text="@string/txt_check_pending"/>
+
+            <TextView
+                android:id="@+id/tv_underwriting"
+                style="@style/tv_status_policy"
+                android:drawableTop="@mipmap/icon_underwriting"
+                android:text="@string/txt_underwriting"/>
+
+            <TextView
+                android:id="@+id/tv_problem_parts"
+                style="@style/tv_status_policy"
+                android:drawableTop="@mipmap/icon_problem_parts"
+                android:text="@string/txt_problem_parts"/>
+
+            <TextView
+                android:id="@+id/tv_return_receipt"
+                style="@style/tv_status_policy"
+                android:drawableTop="@mipmap/icon_return_receipt"
+                android:text="@string/txt_return_receipt"/>
+        </LinearLayout>
+
+        <include
+            layout="@layout/layout_left_center_right_format"/>
+    </LinearLayout>
+
+</ScrollView>

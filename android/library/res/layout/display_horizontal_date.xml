@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content"
+
+    >
+
+    <HorizontalScrollView
+        android:id="@+id/h_scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:scrollbars="none"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:id="@+id/ll_display_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal"></LinearLayout>
+
+    </HorizontalScrollView>
+
+    <!--<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12月"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/img_mentcalendar_month_sign"
+
+            />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="30dip"
+        android:layout_height="2dip"
+        android:src="#ff0077bb"
+        />-->
+
+</LinearLayout>

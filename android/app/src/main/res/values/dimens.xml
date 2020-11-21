@@ -1,0 +1,12 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="title_bar_height_new">51dip</dimen>
+    <dimen name="title_bar_width_new">97dip</dimen>
+    <dimen name="title_button_width">56dip</dimen>
+    <dimen name="home_card_left">8.0dp</dimen>
+
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="height">30dp</dimen>
+</resources>

@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+apply plugin:'com.mob.sdk'
+apply from:'../MobSDK.gradle'
+android {
+    compileSdkVersion 24
+    buildToolsVersion "26.0.2"
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.rulaibao"
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 6
+        versionName "1.0.6"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        //X5兼容64位手机
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-defaults.txt'), 'proguard-rules.pro'
+
+        }
+        debug  {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-defaults.txt'), 'proguard-rules.pro'
+
+
+        }
+    }
+    android.applicationVariants.all { variant ->
+        variant.outputs.all{
+            // apk_版本名称.apk
+            outputFileName =buildType.name+"_RuLaiBao_${defaultConfig.versionName}.apk"
+
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':library')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //    compile 'com.android.support:support-v4:24.2.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.android.support:cardview-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testCompile 'junit:junit:4.12'
+    compile files('src/main/jniLibs/universal-image-loader-1.9.1-with-sources.jar')
+    compile files('src/main/jniLibs/nineoldandroids-2.4.0.jar')
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.facebook.fresco:fresco:1.3.0'
+    compile 'com.facebook.fresco:imagepipeline-okhttp3:0.12.0+'
+    compile 'com.facebook.fresco:webpsupport:1.3.0'
+    compile 'com.facebook.fresco:animated-webp:1.3.0'
+    compile 'com.facebook.fresco:animated-gif:1.3.0'
+    compile files('libs/zxing.jar')
+    compile 'com.lzy.widget:imagepicker:0.3.2'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'pub.devrel:easypermissions:0.4.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    implementation 'pub.devrel:easypermissions:0.4.3'
+    implementation 'com.squareup.okio:okio:1.11.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.5.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation files('libs/tbs_sdk_thirdapp_v3.6.0.1249_43610_sharewithdownload_withoutGame_obfs_20180608_114954.jar')
+    implementation 'it.sephiroth.android.library.imagezoom:imagezoom:2.3.0'
+
+
+}

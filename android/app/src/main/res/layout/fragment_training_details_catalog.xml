@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light"
+    android:scrollbars="none"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+        android:text="全部课程"
+        android:textSize="16sp"
+        android:visibility="gone"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv_training_class_details_catalog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dip"
+        android:dividerHeight="10dip"
+        android:divider="@color/gray_light"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
+
+
+
+

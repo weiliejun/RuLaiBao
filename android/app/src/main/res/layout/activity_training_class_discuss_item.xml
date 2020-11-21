@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="15dip">
+
+        <com.rulaibao.widget.CircularImage
+            android:id="@+id/iv_training_discuss"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:src="@mipmap/img_default_photo" />
+
+        <TextView
+            android:id="@+id/tv_training_discuss_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/iv_training_discuss"
+            android:text="---"
+            android:textSize="16sp"
+            android:textColor="@color/txt_black2"
+            />
+
+        <TextView
+            android:id="@+id/tv_training_discuss_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="01-01 00:00:00"
+            android:textColor="@color/txt_mark_gray"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_training_discuss_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="8dip"
+        android:text="----"
+        android:textSize="16sp"
+        android:textColor="@color/txt_black2"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="10dip">
+
+        <TextView
+            android:id="@+id/tv_discuss_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dip"
+            android:text="回复"
+            android:textColor="@color/txt_blue"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_training_discuss_repay_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/bg_reply"
+        android:text="---"
+        android:textColor="@color/txt_black2"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:background="@color/gray_light" />
+</LinearLayout>

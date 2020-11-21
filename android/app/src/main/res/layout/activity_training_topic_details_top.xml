@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.rulaibao.activity.MainActivity"
+    android:background="@color/gray_light"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+        <com.rulaibao.widget.CircularImage
+            android:id="@+id/iv_answer_detatils_manager"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="25dip"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/img_default_photo"
+            />
+
+        <TextView
+            android:id="@+id/tv_answer_details_manager_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/iv_answer_detatils_manager"
+            android:layout_centerVertical="true"
+            android:text="--"
+            />
+        <TextView
+            android:id="@+id/tv_answer_details_settop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="15dip"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            android:paddingLeft="10dip"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textColor="@color/txt_black1"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_answer_details_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingBottom="15dip"
+        android:background="@color/white"
+        android:text="---"
+        android:textSize="16sp"
+        android:lineSpacingExtra="2dip"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="15dip"
+        >
+        <TextView
+            android:id="@+id/tv_training_topic_detils"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:text="来自圈子:"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_training_topic_detils_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/tv_training_topic_detils"
+            android:text="--"
+            android:textColor="@color/txt_black1"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_training_topic_detils_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0-01 20:00"
+            android:textSize="12sp"
+            android:layout_marginRight="15dip"
+            android:textColor="@color/txt_mark_gray"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:background="@color/gray_light"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+        <ImageView
+            android:id="@+id/iv_answer_detailas_zan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:src="@mipmap/img_answer_zan"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/tv_answer_detailas_zan_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dip"
+            android:layout_marginTop="20dip"
+            android:layout_below="@id/iv_answer_detailas_zan"
+            android:layout_centerHorizontal="true"
+            android:text="给Ta一个赞(0)"
+            android:textSize="12sp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_light"
+        >
+        <TextView
+            android:id="@+id/tv_answer_details_comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:text="0评论"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light"
+    android:scrollbars="none"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    >
+    <TextView
+        android:id="@+id/tv_introduction_discuss_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="10dip"
+        android:text="总共0条研讨"
+        android:textSize="16sp"
+        />
+    <com.rulaibao.widget.MyRecyclerView
+        android:id="@+id/lv_discuss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_introduction_discuss_count"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="42dip"
+        android:dividerHeight="0dip"
+        android:divider="@color/white"
+        android:background="@color/white"
+        android:scrollbars="none"
+
+        >
+
+    </com.rulaibao.widget.MyRecyclerView>
+    <FrameLayout
+        android:id="@+id/fl_details_discuss"
+        android:layout_width="match_parent"
+        android:layout_height="42dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_light"
+        android:paddingTop="5dip"
+        android:paddingRight="12dip"
+        android:paddingLeft="12dip"
+        android:paddingBottom="5dip"
+        android:visibility="gone"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <Button
+                android:id="@+id/btn_details_discuss"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/main_color_yellow"
+                android:text="@string/training_class_details_discuss_comment"
+                android:textColor="@color/bg_white"
+                android:textSize="16sp"
+                />
+
+            <EditText
+                android:id="@+id/et_detail_discuss"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLength="500"
+                android:layout_toLeftOf="@+id/btn_details_discuss"
+                android:background="@color/bg_white"
+                android:hint="@string/training_class_details_discuss_comment_hint"
+                android:textColorHint="@color/txt_mark_gray"
+                android:textSize="14sp"
+                android:paddingLeft="5dip"
+                />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>
+
+
+
+

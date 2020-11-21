@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.rulaibao.activity.MainActivity"
+    android:orientation="vertical"
+    android:background="@color/gray_light"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+            <LinearLayout
+                android:id="@+id/ll_training_toask"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                >
+                <com.rulaibao.uitls.TagFlowLayout
+                    android:id="@+id/gv_training_toask"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    app:max_select="1"/>
+              <!--  <GridView
+                    android:id="@+id/gv_training_toask"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dip"
+                    android:layout_marginBottom="20dip"
+                    android:verticalSpacing="20dip"
+                    android:numColumns="3"
+                    android:visibility="visible"
+                    android:background="@color/white"
+                    >
+
+                </GridView>-->
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/et_toask_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_training_toask"
+                android:gravity="start"
+                android:layout_marginTop="15dip"
+                android:paddingTop="10dip"
+                android:paddingBottom="10dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:background="@color/white"
+                android:hint="输入您想要了解的问题的标题...(10-30字以内)"
+                android:textSize="14sp"
+                android:maxLength="30"
+                android:textColorHint="@color/txt_mark_gray"
+
+                />
+
+            <EditText
+                android:id="@+id/et_toask_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_toask_title"
+                android:layout_marginTop="15dip"
+                android:minLines="8"
+                android:gravity="start"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:background="@color/white"
+                android:hint="请对您的问题进行简单清楚的描述（500字以内）"
+                android:textSize="14sp"
+                android:maxLength="500"
+                android:textColorHint="@color/txt_mark_gray"
+                />
+
+            <FrameLayout
+                android:id="@+id/fl_toask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:layout_below="@id/et_toask_content"
+                android:layout_marginBottom="200dip"
+
+                >
+                <Button
+                    android:id="@+id/btn_training_toask"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="30dip"
+                    android:layout_marginRight="30dip"
+                    android:background="@drawable/shape_ellipse_orange_btn"
+                    android:text="提交"
+                    android:textColor="@color/bg_white"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dip"
+                    />
+
+
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

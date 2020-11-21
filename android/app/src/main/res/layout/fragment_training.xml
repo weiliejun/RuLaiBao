@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light">
+
+    <include
+        android:id="@+id/fragment_title"
+        layout="@layout/fragment_titlebar"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_training"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fragment_title">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/rsv_fragment_training"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_light"
+            android:fillViewport="true"
+            android:orientation="vertical"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@color/bg_white"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tv_training_class"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dip"
+                        android:layout_marginTop="15dip"
+                        android:layout_weight="1"
+                        android:drawablePadding="8dip"
+                        android:drawableTop="@mipmap/img_training_class"
+                        android:gravity="center"
+                        android:text="@string/training_class"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_training_ask"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dip"
+                        android:layout_marginTop="15dip"
+                        android:layout_weight="1"
+                        android:drawablePadding="8dip"
+                        android:drawableTop="@mipmap/img_training_ask"
+                        android:gravity="center"
+                        android:text="@string/training_ask"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_training_circle"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dip"
+                        android:layout_marginTop="15dip"
+                        android:layout_weight="1"
+                        android:drawablePadding="8dip"
+                        android:drawableTop="@mipmap/img_training_circle"
+                        android:gravity="center"
+                        android:text="@string/training_circle"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_training_promote"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dip"
+                        android:layout_marginTop="15dip"
+                        android:layout_weight="1"
+                        android:drawablePadding="8dip"
+                        android:drawableTop="@mipmap/img_training_promote"
+                        android:gravity="center"
+                        android:text="@string/training_promote"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <!-- 课程推荐布局 -->
+                <LinearLayout
+                    android:id="@+id/ll_training_recommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dip"
+                    android:layout_marginBottom="10dip"
+                    android:background="@color/bg_white"
+                    android:orientation="vertical"
+                    android:padding="15dip"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/training_recommend"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_training_recommend_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="1900-01-01"/>
+                    </RelativeLayout>
+
+                    <include layout="@layout/fragment_training_class_item"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:text="@string/training_boutique"
+                        android:textSize="16sp"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_training_recommend_refresh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_training_refresh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dip"
+                            android:src="@mipmap/img_training_refresh"/>
+
+                        <TextView
+                            android:id="@+id/tv_training_refresh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dip"
+                            android:text="@string/training_refresh"
+                            android:textColor="@color/txt_mark_gray"
+                            android:textSize="16sp"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_boutique_nodata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="10dip"
+                    android:text="暂无精品课程"
+                    android:textColor="@color/gray_d"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_white"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:paddingTop="10dip"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/ll_training_boutique_first"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_training_boutique_first"
+                            android:layout_width="0dip"
+                            android:layout_height="145dip"
+                            android:layout_marginRight="5dip"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/tv_training_boutique_first"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="10dip"
+                                android:layout_marginTop="10dip"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="---"/>
+
+                            <ImageView
+                                android:id="@+id/iv_training_boutique_first"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_above="@id/tv_training_boutique_first"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/img_training_quality"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_training_boutique_second"
+                            android:layout_width="0dip"
+                            android:layout_height="145dip"
+                            android:layout_marginLeft="5dip"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/tv_training_boutique_second"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="10dip"
+                                android:layout_marginTop="10dip"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="---"/>
+
+                            <ImageView
+                                android:id="@+id/iv_training_boutique_second"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_above="@id/tv_training_boutique_second"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/img_training_quality"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_training_boutique_third"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_training_boutique_third"
+                            android:layout_width="0dip"
+                            android:layout_height="145dip"
+                            android:layout_marginRight="5dip"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/tv_training_boutique_third"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="10dip"
+                                android:layout_marginTop="10dip"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="---"/>
+
+                            <ImageView
+                                android:id="@+id/iv_training_boutique_third"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_above="@id/tv_training_boutique_third"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/img_training_quality"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_training_boutique_forth"
+                            android:layout_width="0dip"
+                            android:layout_height="145dip"
+                            android:layout_marginLeft="5dip"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/tv_training_boutique_forth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="10dip"
+                                android:layout_marginTop="10dip"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="---"/>
+
+                            <ImageView
+                                android:id="@+id/iv_training_boutique_forth"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_above="@id/tv_training_boutique_forth"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/img_training_quality"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="10dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:text="@string/training_hotask"
+                        android:textSize="16sp"/>
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/lv_training_hot_ask"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/gray_light"
+                    android:dividerHeight="10dip">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+

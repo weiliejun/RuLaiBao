@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_item_commission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/icon_arrow"/>
+
+        <TextView
+            android:id="@+id/tv_commission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/iv_arrow"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="24dp"
+            tools:text="+200.00"
+            android:textColor="@color/txt_black1"
+            android:textSize="14sp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="60dp"
+            android:layout_toLeftOf="@id/tv_commission"
+            android:orientation="vertical"
+            android:paddingBottom="18dp"
+            android:paddingTop="18dp">
+
+            <TextView
+                android:id="@+id/tv_insurance_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/txt_black1"
+                android:textSize="16sp"
+                tools:text="国华人寿-盛世年金保险国华人寿-盛世年金保险"/>
+
+            <TextView
+                android:id="@+id/tv_income_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="16sp"
+                tools:text="收益日期：2018-11-21"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/v_line"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+</LinearLayout>

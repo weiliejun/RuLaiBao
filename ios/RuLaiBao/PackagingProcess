@@ -1,0 +1,11 @@
+
+为了避免遗漏,下面是打包上架项目配置流程
+
+1> 更改Version 和 Build
+2> 首先将项目复制一份单独拿出来,用于打包提交审核
+3> 找到 Configure 文件
+   将开发环境改为正式环境
+//本项目未配置https，故下列两项暂不用改
+//搜索 DataHttp,然后将 http 改为 https
+//将底部 #define webHttp  @"http"  改为 #define webHttp  @"https"
+4> 如果需要其他的配置之类的根据情况来做

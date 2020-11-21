@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray_new"
+    android:orientation="vertical"
+    tools:context="com.rulaibao.activity.MainActivity"
+    >
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        app:tabContentStart="20dp"
+        app:tabGravity="center"
+        app:tabIndicatorColor="@color/orange"
+        app:tabMaxWidth="0dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/txt_black1"
+        app:tabTextAppearance="@style/training_tab"
+        app:tabTextColor="@color/txt_black2">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"/>
+
+
+</LinearLayout>

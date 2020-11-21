@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_line"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingRight="15dp"
+            android:text="@string/item_one_title"
+            android:textColor="@color/txt_black1"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="@string/item_one_content"
+            android:textColor="@color/txt_black1"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingRight="15dp"
+            android:text="@string/item_two_title"
+            android:textColor="@color/txt_black1"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="@string/item_two_content"
+            android:textColor="@color/txt_black1"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="1dp"
+            android:lineSpacingMultiplier="1.3"
+            android:text="@string/item_two_remark"
+            android:textColor="@color/txt_black2"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingRight="15dp"
+            android:text="@string/item_three_title"
+            android:textColor="@color/txt_black1"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/item_three_content"
+            android:textColor="@color/txt_black1"
+            android:textSize="14sp"/>
+
+        <include
+            layout="@layout/layout_tax_form"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingRight="15dp"
+            android:text="@string/item_four_title"
+            android:textColor="@color/txt_black1"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="@string/item_four_content"
+            android:textColor="@color/txt_black1"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingRight="15dp"
+            android:text="@string/item_five_title"
+            android:textColor="@color/txt_black1"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:paddingBottom="25dp"
+            android:text="@string/item_five_content"
+            android:textColor="@color/txt_black1"
+            android:textSize="14sp"/>
+
+
+    </LinearLayout>
+</ScrollView>

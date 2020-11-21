@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_white" >
+
+    <ImageView
+        android:id="@+id/id_lines"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/white"/>
+    <LinearLayout
+        android:layout_below="@+id/id_lines"
+        android:id="@+id/gesture_tip_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20.0dip" >
+
+        <TextView
+            android:id="@+id/text_title_message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30.0dip"
+            android:gravity="center_horizontal"
+            android:textColor="@color/txt_gray"
+            android:textSize="18sp"
+
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/gesture_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="50dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50.0dip"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/text_forget_gesture"
+                android:layout_width="0dp"
+                android:padding="10dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/forget_gesture_code"
+                android:textColor="@color/txt_gray"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/text_other_account"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/use_other_account_login"
+                android:textColor="@color/txt_gray"
+                android:textSize="14.0sp"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

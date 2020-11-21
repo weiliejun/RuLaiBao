@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            app:contentScrim="@color/colorPrimary"
+            app:expandedTitleMarginStart="100dp"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:statusBarScrim="@android:color/transparent"
+            app:titleEnabled="false">
+            <com.rulaibao.test.X5WebView
+                android:id="@+id/x5_webview"
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:scrollbars="none" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tl_class_details"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:background="@color/white"
+            app:tabBackground="@color/white"
+            app:tabContentStart="20dp"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/orange"
+            app:tabMaxWidth="0dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/txt_black1"
+            app:tabTextAppearance="@style/training_tab"
+            app:tabTextColor="@color/txt_mark_gray"
+
+            >
+
+        </android.support.design.widget.TabLayout>
+
+        <!--<com.rulaibao.widget.ViewPagerForScrollView
+            android:id="@+id/vp_class_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            />-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_class_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fl_details_discuss"
+        android:layout_width="match_parent"
+        android:layout_height="42dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_light"
+        android:paddingTop="5dip"
+        android:paddingRight="12dip"
+        android:paddingLeft="12dip"
+        android:paddingBottom="5dip"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <Button
+                android:id="@+id/btn_details_discuss"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/main_color_yellow"
+                android:text="@string/training_class_details_discuss_comment"
+                android:textColor="@color/bg_white"
+                android:textSize="16sp"
+                />
+
+            <EditText
+                android:id="@+id/et_detail_discuss"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLength="500"
+                android:layout_toLeftOf="@+id/btn_details_discuss"
+                android:background="@color/bg_white"
+                android:hint="@string/training_class_details_discuss_comment_hint"
+                android:textColorHint="@color/txt_mark_gray"
+                android:textSize="14sp"
+                android:paddingLeft="5dip"
+                />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

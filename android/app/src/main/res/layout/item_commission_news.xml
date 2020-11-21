@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_white"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    >
+
+    <ImageView
+        android:id="@+id/iv_item_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/img_arrow_right"/>
+
+    <TextView
+        android:id="@+id/tv_commission_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/iv_item_arrow"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/txt_black1"
+        android:text="+5000.00"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="13dp"
+        android:layout_toLeftOf="@id/iv_item_arrow"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/tv_commission_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="12dp"
+            android:text="佣金收益"
+            android:textColor="@color/txt_gray_d"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_commission_title"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="7dp"
+            android:textSize="14sp"
+            android:text="4-12"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_time"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBottom="@id/tv_date"-->
+            <!--android:layout_marginLeft="35dp"-->
+            <!--android:layout_marginTop="7dp"-->
+            <!--android:text="15:30"-->
+            <!--android:textColor="@color/txt_mark_gray"-->
+            <!--android:textSize="14sp"/>-->
+    </RelativeLayout>
+
+    <View
+        style="@style/v_line"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

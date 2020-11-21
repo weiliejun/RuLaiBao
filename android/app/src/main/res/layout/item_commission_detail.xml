@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_my_payroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:id="@+id/tv_my_payroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="盛世年年年金保险"
+            android:textColor="@color/txt_black1"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_profit_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_my_payroll"
+            android:text="收益日期："
+            android:textColor="@color/txt_black2"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_toRightOf="@id/tv_profit_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_my_payroll"
+            tools:text="2018-08-08"
+            android:textColor="@color/txt_black2"
+            android:textSize="12sp"/>
+
+        <ImageView
+            android:id="@+id/iv_right_arrow"
+            style="@style/iv_right_arrow"/>
+
+        <TextView
+            android:layout_toLeftOf="@id/iv_right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/txt_black1"
+            android:textSize="16sp"
+            tools:text="+5000.00"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/v_line"/>
+</RelativeLayout>

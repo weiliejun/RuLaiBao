@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="24dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        app:cardCornerRadius="4dp"
+        app:contentPadding="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="125dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="10dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/iv_delete"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@mipmap/ic_delete"/>
+
+                <TextView
+                    android:id="@+id/tv_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@id/iv_delete"
+                    android:text="删除"
+                    android:textColor="@color/txt_black2"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_set_up_salary_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/iv_make_payroll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    tools:src="@mipmap/icon_unselected"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_payroll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@id/iv_make_payroll"
+                    android:text="设为工资卡"
+                    android:textColor="@color/txt_black2"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/card_view_bottom"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="5dp"
+        app:contentPaddingTop="0dp">
+
+        <LinearLayout
+            android:id="@+id/rl_item_insurance_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="18dp"
+            android:paddingTop="18dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="23dp"
+                android:paddingRight="12dp">
+
+                <ImageView
+                    android:id="@+id/iv_bank_logo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    tools:src="@mipmap/img_default_photo"/>
+
+                <TextView
+                    android:id="@+id/tv_bank_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv_bank_logo"
+                    android:maxLength="15"
+                    android:maxLines="1"
+                    android:textColor="@color/txt_black1"
+                    android:textSize="18sp"
+                    tools:text="中国建设银行"/>
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_card_type"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:text="普通卡"-->
+                <!--android:textColor="@color/txt_black2"-->
+                <!--android:textSize="16sp"/>-->
+
+                <TextView
+                    android:id="@+id/tv_bank_card_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_bank_logo"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="18dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/txt_black2"
+                    tools:text="**** **** **** 2277 886"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

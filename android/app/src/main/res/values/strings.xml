@@ -1,0 +1,308 @@
+<resources>
+    <string name="app_name">如来保</string>
+    <string name="app_id">rulaibao</string>
+    <string name="app_chinesename">如来保版本更新</string>
+
+    <string name="net_fail_text">当前网络不可用，点此检查网络设置</string>
+
+
+    <!--研修-->
+
+    <string name="training">研修</string>
+
+
+    <string name="training_class">课程</string>
+    <string name="training_ask">问答</string>
+    <string name="training_circle">圈子</string>
+    <string name="training_promote">展业</string>
+    <string name="training_circle_all">全部圈子</string>
+    <string name="test_idol">偶像练习工程师</string>
+
+    <string name="training_toask">我要提问</string>
+    <string name="training_answer">回答</string>
+    <string name="training_ask_details">问题详情</string>
+    <string name="training_answer_details">回答详情</string>
+    <string name="training_topic_details">话题详情</string>
+    <string name="training_topic_add">发布话题</string>
+
+    <string name="training_recommend">课程推荐</string>
+    <string name="training_boutique">精品课程</string>
+    <string name="training_hotask">热门问答</string>
+    <string name="training_refresh">换一换</string>
+
+    <string name="training_class_details">课程详情</string>
+    <string name="training_mycircle">我的圈子</string>
+    <string name="training_mycircle_join">我加入的圈子</string>
+    <string name="training_recommend_circle">推荐圈子</string>
+    <string name="training_set_authority">设置权限</string>
+
+
+    <string name="training_class_details_discuss_comment">发表</string>
+    <string name="training_circle_topic_issue">发布话题</string>
+    <string name="training_class_details_discuss_comment_hint">我也来说几句...(最多500字)</string>
+    <string name="training_class_details_discuss_comment_link_hint">输入链接</string>
+    <string name="training_toanswer">请认真输入您的回答...(1000字以内)</string>
+    <string name="training_commit">提交</string>
+
+    <string name="simple_view_behavior">com.rulaibao.test.SimpleViewBehavior</string>
+    <string name="translate_up_down_behavior">com.rulaibao.test.TranslateUpDownBehavior</string>
+
+    <!-- 登录 -->
+    <string name="login_title">道德    专业    平等    利他</string>
+    <string name="login_phone">手机号：</string>
+    <string name="login_password">密码：</string>
+    <string name="login_forget_password">忘记密码？</string>
+    <string name="login_sign">注册</string>
+    <string name="login_name">登录</string>
+
+    <!-- 注册 -->
+    <string name="sign_phone_name">手机号</string>
+    <string name="sign_phone_hint">请输入手机号</string>
+    <string name="sign_verify">验证码</string>
+    <string name="sign_verify_hint">请输入验证码</string>
+    <string name="sign_password">请输入登录密码</string>
+    <string name="sign_real_name">真实姓名</string>
+    <string name="sign_real_name_hint">请输入姓名</string>
+    <string name="sign_recommend_code">推荐码</string>
+    <string name="sign_recommend_code_hint">请输入推荐码</string>
+    <string name="sign_get_verify">获取验证码</string>
+    <string name="sign_agree">我已阅读并同意</string>
+    <string name="sign_web">《如来保》</string>
+    <string name="sign_agree_two">服务协议。</string>
+    <string name="sign_btn_name">立即注册</string>
+    <string name="sign_getsms_again">重新获取</string>
+    <string name="sign_password_name">密码</string>
+    <string name="sign_password_hint">(6-16位数字和字母组合)</string>
+    <string name="sign_address">所在省/市</string>
+
+
+    <!-- 找回密码 -->
+    <string name="find_password_title">密码找回</string>
+    <string name="find_password_phone">注册的手机号</string>
+    <string name="find_password_verify_code_mess">请输入注册手机号收到的短信验证码。</string>
+    <string name="new_password">新密码</string>
+    <string name="old_password">旧密码</string>
+    <string name="find_password_password_new">确认密码</string>
+    <string name="find_password_btn">密码重置</string>
+    <string name="btn_sure">确定</string>
+
+
+    <!-- 手势密码 -->
+    <string name="gesture_edit_title">解锁</string>
+    <string name="forget_gesture_code">忘记手势密码</string>
+    <string name="setup_gesture_pattern">绘制解锁图案</string>
+    <string name="setup_gesture_code">设置手势密码</string>
+    <string name="setup_gesture_pattern_again">再次绘制解锁图案</string>
+    <string name="reset_gesture_code">重新设置手势密码</string>
+    <string name="title_changegesture">修改手势密码</string>
+    <string name="set_gesture_pattern_old">绘制旧解锁图案</string>
+    <string name="gesture_login">手势密码登录</string>
+
+    <string name="use_other_account_login">用其他账号登录</string>
+    <string name="set_gesture_pattern">绘制解锁图案</string>
+    <string name="set_gesture_pattern_reason">设置手势密码，防止他人未经授权查看</string>
+
+
+    <string name="set_gesture_pattern_jump">跳过</string>
+    <string name="title_gestureset">设置手势密码</string>
+
+    <!-- 产品预约 -->
+    <string name="product_appointment_name">你的姓名:</string>
+    <string name="product_appointment_phone">你的电话:</string>
+    <string name="product_appointment_insurance_company">保险公司:</string>
+    <string name="product_appointment_insurance_plan">保险计划:</string>
+    <string name="product_appointment_insurance_amount">保险金额:</string>
+    <string name="product_appointment_pay_year">年缴保费:</string>
+    <string name="product_appointment_insurance_limit">保险期限:</string>
+    <string name="product_appointment_pay_limit">缴费期限:</string>
+    <string name="product_appointment_time">预计交单时间:</string>
+    <string name="product_appointment_remark">备注说明:</string>
+    <string name="product_appointment_insurance_plan_edit">请输入保险计划</string>
+    <string name="product_appointment_insurance_amount_edit">请输入保险金额</string>
+    <string name="product_appointment_pay_year_edit">请输入年缴保费</string>
+    <string name="product_appointment_insurance_limit_edit">请输入保险期限</string>
+    <string name="product_appointment_pay_limit_edit">请输入缴费期限</string>
+    <string name="product_appointment_remark_edit">请输入备注说明</string>
+    <string name="product_appointment_btn">提交预约</string>
+
+    <!-- 邀请好友内容 -->
+    <string name="shared_title">高效获客，高效成交</string>
+    <string name="shared_message">如来保是一款面向广大营销员伙伴们的应用软件，可以提供在线承保；在线计划书生成、分享；在线预约；投保状态实时跟踪；在线保单检视；风险缺口分析等全方位营销工具。</string>
+
+    <!-- 客服电话 -->
+    <string name="customer_service_phone_number_format">4000000314</string>
+    <string name="customer_service_phone_number">4000000314</string>
+
+    <string name="title_null"></string>
+    <string name="title_house_detail">房源详情</string>
+
+    <string name="btn_login">登录</string>
+    <string name="txt_my_policy">我的保单</string>
+    <string name="txt_check_pending">待审核</string>
+    <string name="txt_underwriting">已承保</string>
+    <string name="txt_problem_parts">问题件</string>
+    <string name="txt_return_receipt">回执签收</string>
+    <string name="txt_renewal_reminder">续保提醒</string>
+    <string name="txt_my_bookings">我的预约</string>
+    <string name="txt_my_ask">我的提问</string>
+    <string name="txt_my_topic">我的话题</string>
+    <string name="txt_my_participation">我参与的</string>
+    <string name="txt_my_collection">我的收藏</string>
+
+    <string name="setting_title">设置</string>
+    <string name="txt_setting_gesture_password">手势密码</string>
+    <string name="setting_change_login_password">修改登录密码</string>
+    <string name="setting_modify_password">修改密码</string>
+    <string name="setting_invite">推荐APP给好友</string>
+    <string name="setting_contact_customer_service">联系客服</string>
+    <string name="setting_platform_bulletin">平台公告</string>
+    <string name="setting_service_agreement">服务协议</string>
+    <string name="setting_about">关于如来保</string>
+    <string name="setting_logout">退出登录</string>
+    <string name="et_consulting_questions">请输入您想要咨询的问题,我们会及时与您联系！</string>
+    <string name="tv_phone">手机号码</string>
+    <string name="et_phone">请输入您的手机号码</string>
+    <string name="btn_submit">提交</string>
+    <string name="btn_cancel_booking">取消预约</string>
+
+    <!--设置页面文字-->
+    <string name="setting_change_gesture_password">修改手势密码</string>
+    <string name="setting_recommend_rule">推荐规则</string>
+    <string name="setting_recommend_record">推荐记录</string>
+    <string name="setting_recommend_btn">推荐给朋友</string>
+    <string name="setting_recommend_title">推荐APP给好友</string>
+
+    <string name="recommend_record_name">姓名</string>
+    <string name="recommend_record_phone">手机号</string>
+    <string name="recommend_record_status">认证状态</string>
+
+    <!--所有的页面标题-->
+    <string name="title_my_info">个人信息</string>
+    <string name="title_sales_certification">销售认证</string>
+    <string name="title_transaction_record">交易记录</string>
+    <string name="title_transaction_detail">佣金详情</string>
+    <string name="title_policy_record">保单记录</string>
+    <string name="title_policy_record_detail">保单详情</string>
+    <string name="title_insurance_product">保险产品</string>
+    <string name="title_contact_customer_service">联系客服</string>
+    <string name="title_platform_bulletin">平台公告</string>
+    <string name="title_platform_bulletin_detail">公告详情</string>
+    <string name="title_renewal_reminder">续保提醒</string>
+    <string name="title_insurance_product_detail">产品详情</string>
+    <string name="title_plan">计划书</string>
+    <string name="title_policy_plan">保单规划</string>
+    <string name="title_product_appointment">产品预约</string>
+    <string name="title_policy_booking_list">预约列表</string>
+    <string name="title_policy_booking_detail">预约详情</string>
+    <string name="title_my_collection">我的收藏</string>
+    <string name="title_my_ask">我的提问</string>
+    <string name="title_my_topic">我的话题</string>
+    <string name="title_my_partake">我参与的</string>
+    <string name="title_interaction_news">互动消息</string>
+    <string name="title_new_members_of_circle">圈子新成员</string>
+    <string name="title_news">消息</string>
+    <string name="title_commission_news">佣金消息</string>
+    <string name="title_policy_news">保单消息</string>
+    <string name="title_other_news">其它消息</string>
+    <string name="title_my_commission">我的佣金</string>
+    <string name="title_waiting_commission">待发佣金</string>
+    <string name="title_have_get_commission">已发佣金</string>
+    <string name="title_commission_detail">佣金明细</string>
+    <string name="title_payroll_detail">工资单详情</string>
+    <string name="title_my_payroll">我的工资单</string>
+    <string name="title_my_bank_cards">我的银行卡</string>
+    <string name="title_add_bank_card">新增银行卡</string>
+    <string name="title_tax_deduction_rules">扣税规则</string>
+    <string name="title_add_new_insurance_policy">新增保单</string>
+
+
+    <!-- 交易明细/保单详情 页面文字-->
+    <string name="bill_type">账单类型：</string>
+    <string name="underwriting_time">承保时间：</string>
+    <string name="product_name">产品名称：</string>
+    <string name="policy_number">保单编号：</string>
+    <string name="customer_name">客户姓名：</string>
+    <string name="id_number">身份证号：</string>
+    <string name="insurance_period">保险期限：</string>
+    <string name="payment_period">缴费期限：</string>
+    <string name="renewal_date">续费日期：</string>
+    <string name="have_insurance_premiums">已交保费：</string>
+    <string name="promotion_fee">推广费：</string>
+    <string name="individual_income_tax">个人所得税：</string>
+    <string name="value_added_tax">增值税：</string>
+    <string name="additional_tax">附加税：</string>
+    <string name="get_commission">获得佣金：</string>
+    <string name="record_date">记录日期：</string>
+    <string name="settlement_time">结算时间：</string>
+
+    <string name="policy_status">保单状态：</string>
+    <string name="renewal_date2">续期日期：</string>
+    <string name="related_vouchers">相关凭证</string>
+    <string name="remarks">备注说明</string>
+
+    <!-- 保单预约详情 页面文字-->
+    <string name="policy_booking_status">预约状态：</string>
+    <string name="policy_booking_time">预约时间：</string>
+    <string name="policy_booking_people">预约人：</string>
+    <string name="policy_booking_phone">预约电话：</string>
+    <string name="insurance_company">保险公司：</string>
+    <string name="insurance_plan">保险计划：</string>
+    <string name="insurance_amount">保险金额：</string>
+    <string name="annual_premium">年缴保费：</string>
+    <string name="expected_policy">预计交单：</string>
+
+
+    <string name="three_month_renewal_reminder">当前3个月内待续保的保单：</string>
+    <string name="head_photo">头像</string>
+    <string name="no_certified">未认证</string>
+    <string name="address_personal">所在省/市</string>
+    <string name="accumulated_commission">累计佣金(元)</string>
+
+    <!-- 我的佣金 -->
+    <string name="waiting_commission">待发佣金(元)</string>
+    <string name="my_commission">已发佣金(元)</string>
+    <string name="my_payroll">我的工资单</string>
+    <string name="my_payroll_desc">查看各月的佣金情况</string>
+    <string name="my_bank_card">我的银行卡</string>
+    <string name="my_bank_card_desc">绑定银行卡后，佣金将于每月11日自动转入</string>
+    <string name="tax_rules">扣税规则</string>
+    <string name="tax_rules_desc">推广佣金年年享</string>
+
+    <string name="check_commission_details">查看佣金明细</string>
+
+    <!-- 扣税规则 -->
+    <string name="item_one_title">1、增值税计算：</string>
+    <string name="item_one_content" formatted="false"> \n增值税=含增值税佣金收入/1.03*3% \n\n起征点：3万(不含增值税)，即不含税佣金收入≤3万，则不征收增值税； \n\n税率固定：3% </string>
+    <string name="item_two_title">2、附加税计算：</string>
+    <string name="item_two_content">\n城建税：增值税 \n\n教育费附加：增值税 \n\n地方教育费附加：增值税 </string>
+    <string name="item_two_remark">注：《财政部、国家税务总局关于扩大有关政府性基金免征范围的通知》(财税〔2016〕12号)：销售额或营业额不超过10万元/月或30万/季度，免征教育费附加、地方教育费附加、水利建设基金；
+各省市附加税率并非一致。</string>
+    <string name="item_three_title">3、个人所得税计算：</string>
+    <string name="item_three_content" formatted="false">应纳税所得额：(不含税佣金收入-附加税)*(1-40%),40%为展业成本,不计算个税；\n\n当应纳税所得额≤4000，个人所得税=(应纳税所得额-800)*20%
+\n\n当应纳税所得额≥4000，个人所得税=应纳税所得额*(1-20%)*适用税率-速算扣除数 </string>
+    <string name="item_four_title">4、税金合计：</string>
+    <string name="item_four_content">\n应交税金=增值税+附加税+个人所得税</string>
+    <string name="item_five_title">5、代理人佣金收入：</string>
+    <string name="item_five_content">\n税后收入=税前收入-应交税金</string>
+
+    <!-- 新增银行卡 -->
+    <string name="id_number1">身份证号</string>
+    <string name="account_opening_bank">开户银行</string>
+    <string name="account_opening_bank_address">开户地</string>
+    <string name="account_opening_bank_name">开户行名称</string>
+    <string name="et_hint1">请输入开户行名称</string>
+    <string name="bank_card_num">银行帐号</string>
+    <string name="et_hint2">请输入银行帐号</string>
+    <string name="user_phone_number">手机号</string>
+    <string name="click_and_get_verification_code">点击获取验证码</string>
+    <string name="tv_add_bank_card_hint">注：保存以后银行卡信息不可修改！</string>
+
+    <!-- 我的工资单 -->
+    <string name="income">净收入</string>
+    <string name="total_commission">总佣金:</string>
+    <string name="tax_deduction">扣&#160;&#160;&#160;&#160;税:</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

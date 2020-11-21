@@ -1,0 +1,229 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="android:Theme.Light">-->
+    <!--</style>-->
+
+    <style name="Theme.Black.NoTitleBar" parent="Theme.Black.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@mipmap/ic_launch</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar"></style>
+
+    <!--<style name="Theme.AppCompat.Light.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <!--<item name="android:windowBackground">@mipmap/ic_launch</item>-->
+    <!--</style>-->
+
+    <!--toolbar替代actionbar后必须设置主题为NoActionBar-->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Activity继承自 android.support.v7.app.AppCompatActivity,主题配置 -->
+    <style name="Theme.AppCompat.Light.NoTitleBar" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!--自定义日期控件对话框样式-->
+    <style name="custom_date_picker_dialog" parent="android:Theme.Holo.Light.DarkActionBar"></style>
+
+    <!-- TitleBar -->
+    <style name="TitleBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/title_bar_height_new</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="TitleBar_Menu_New">
+        <item name="android:windowEnterAnimation">@anim/anim_titlemenu_in_new</item>
+        <item name="android:windowExitAnimation">@anim/anim_titlemenu_out_new</item>
+    </style>
+
+    <style name="TitleBar_LeftButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/title_bar_height_new</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TitleBar_RightFrame">
+        <item name="android:layout_width">@dimen/title_button_width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="TitleBar_RightButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="TitleBar_RedPoint">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="TitleBar_Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <!-- <item name="android:textSize">23sp</item> -->
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="btn_house_detail_stytle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">39dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/shape_center_light_gray_white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--房源页价钱样式-->
+    <style name="house_resource_price_stytle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/txt_black1</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!--预约说明会参加日期对话框样式-->
+    <style name="date_picker_style">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <!--预约说明会参加日期对话框的进出动画-->
+    <style name="date_picker_anim" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/date_picker_enter</item>
+        <item name="@android:windowExitAnimation">@anim/date_picker_exit</item>
+    </style>
+
+    <!-- 我的模块 -->
+    <!--保单的四种状态：待审核、已承保、问题件、回执签收-->
+    <style name="tv_status_policy">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/txt_black1</item>
+    </style>
+
+    <!--向右箭头样式-->
+    <style name="iv_right_arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:src">@mipmap/icon_arrow</item>
+    </style>
+
+    <!--直线/分割线样式-->
+    <style name="v_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/bg_line</item>
+    </style>
+
+
+    <style name="training_tab" parent="android:TextAppearance.Holo.Large">
+        <item name="android:textSize">16sp</item>
+
+    </style>
+
+    <!--popupWindow的样式-->
+    <style name="Theme.PopupMenu"
+
+        parent="@android:style/Widget.Holo.Light.ListPopupWindow">
+
+        <!--<item name="android:layout_width">wrap_content</item>-->
+        <!--<item name="android:layout_height">wrap_content</item>-->
+        <item name="android:popupBackground">@color/orange</item>
+
+    </style>
+
+
+    <style name="Theme.InCallScreen"
+
+        parent="@android:style/Theme.Holo.NoActionBar">
+
+        <item name="android:popupMenuStyle">@style/Theme.PopupMenu</item>
+
+    </style>
+
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
+    </style>
+
+    <!--排序dialog样式-->
+    <style name="SortDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!--控制头部据appbar的样式-->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!--用于控制toolbar溢出菜单的样式-->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TabLayoutTextStyle" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <!--BaseActivity 的dialog样式-->
+    <style name="BaseActivityDialogTheme" parent="android:Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- 自定义Dialog主题 -->
+    <style name="BottomDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowAnimationStyle">@style/BottomDialogAnimation</item>
+    </style>
+
+    <!-- 自定义Dialog动画 -->
+    <style name="BottomDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/input_method_enter</item>
+        <item name="android:windowExitAnimation">@anim/input_method_exit</item>
+    </style>
+</resources>

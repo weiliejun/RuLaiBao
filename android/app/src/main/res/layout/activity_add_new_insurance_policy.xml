@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray_new"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="18dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="投保人"
+            android:textColor="@color/txt_black2"
+            android:textSize="14sp"
+            />
+
+        <EditText
+            android:id="@+id/et_policy_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:background="@color/transparent"
+            android:hint="请输入投保人"
+            android:inputType="text"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:textColor="@color/txt_black2"
+            android:textColorHint="@color/txt_mark_gray"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+    <View
+        style="@style/v_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="18dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="投保单号"
+            android:textColor="@color/txt_black2"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/et_insurance_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:background="@color/transparent"
+            android:hint="请输入投保单号"
+            android:inputType="number"
+            android:maxLength="25"
+            android:maxLines="1"
+            android:textColor="@color/txt_black2"
+            android:textColorHint="@color/txt_mark_gray"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27.5dp"
+        android:layout_marginRight="27.5dp"
+        android:background="@drawable/shape_gradient_orange"
+        android:layout_marginTop="50dp"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray_new"/>
+
+</LinearLayout>

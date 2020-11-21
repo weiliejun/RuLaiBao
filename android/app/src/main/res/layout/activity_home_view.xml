@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_project_plan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@mipmap/ic_planbook"
+            android:gravity="center_horizontal"
+            android:text="计划书"/>
+
+        <TextView
+            android:id="@+id/tv_disease_guarantee"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@mipmap/ic_disease_guarantee"
+            android:gravity="center_horizontal"
+            android:text="疾病保障" />
+
+        <TextView
+            android:id="@+id/tv_pension_guarantee"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@mipmap/ic_pension_guarantee"
+            android:gravity="center_horizontal"
+            android:text="养老保障"/>
+        <TextView
+            android:id="@+id/tv_property_guarantee"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@mipmap/ic_property_guarantee"
+            android:gravity="center_horizontal"
+            android:text="资产保障"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_accident_guarantee"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@mipmap/ic_accident_guarantee"
+            android:gravity="center_horizontal"
+            android:text="意外保障"/>
+
+        <TextView
+            android:id="@+id/tv_medical_guarantee"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@mipmap/ic_medical_guarantee"
+            android:gravity="center_horizontal"
+            android:text="医疗保障"/>
+
+        <TextView
+            android:id="@+id/tv_old_young"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@mipmap/ic_old_young"
+            android:gravity="center_horizontal"
+            android:text="一老一小"/>
+        <TextView
+            android:id="@+id/tv_enterprise_team"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@mipmap/ic_enterprise_team"
+            android:gravity="center_horizontal"
+            android:text="企业团体"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 顶部两边各一个按钮 -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/TitleBar">
+    <!-- android:layout_toLeftOf="@+id/titlebar_btcontainer" -->
+    <LinearLayout
+        android:id="@+id/title_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:src="@mipmap/icon_back"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:maxEms="12"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/txt_black1"
+        android:textSize="18sp"/>
+</RelativeLayout>

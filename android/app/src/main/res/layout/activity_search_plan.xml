@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray_light">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <include
+            layout="@layout/searchview_for_plan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_search_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="取消"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <ViewSwitcher
+        android:id="@+id/vs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_top"
+        android:background="@color/gray_light"
+        android:orientation="vertical">
+
+        <include layout="@layout/activity_search_view_plan"/>
+
+        <ViewSwitcher
+            android:id="@+id/vs_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_light">
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:divider="@color/gray_light"
+                android:dividerHeight="1dp"/>
+
+            <include layout="@layout/activity_empty_view"/>
+        </ViewSwitcher>
+    </ViewSwitcher>
+</RelativeLayout>

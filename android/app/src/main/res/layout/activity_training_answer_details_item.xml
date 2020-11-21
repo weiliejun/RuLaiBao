@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+
+        >
+        <com.rulaibao.widget.CircularImage
+            android:id="@+id/iv_answer_details"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:src="@mipmap/img_default_photo"
+            android:text="---"
+
+            />
+        <TextView
+            android:id="@+id/tv_answer_details_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/iv_answer_details"
+            android:text="渣渣辉"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/tv_answer_details_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="7-7 00:00:00"
+            />
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_answer_details_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="8dip"
+        android:text="财富精灵PC端开发测试沟通，财富精灵APP功能规划原型设计制作"
+        android:textSize="16sp"
+
+        />
+    <TextView
+        android:id="@+id/tv_answer_detailas_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="5dip"
+        android:autoLink="all"
+        android:textColorLink="@color/txt_blue"
+        android:text=""
+        android:textColor="@color/txt_gray"
+        android:visibility="gone"
+        />
+    <ImageView
+        android:id="@+id/iv_answer_detailas"
+        android:layout_width="match_parent"
+        android:layout_height="120dip"
+        android:layout_marginLeft="50dip"
+        android:layout_marginRight="50dip"
+        android:layout_marginTop="5dip"
+        android:visibility="gone"
+        android:scaleType="centerCrop"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        >
+        <TextView
+            android:id="@+id/tv_answer_details_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_alignParentRight="true"
+            android:text="回复"
+            android:textColor="@color/txt_blue"
+            />
+
+
+    </RelativeLayout>
+    <com.rulaibao.widget.MyListView
+        android:id="@+id/lv_answer_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:divider="@color/gray_light"
+        android:dividerHeight="0dip"
+        >
+
+    </com.rulaibao.widget.MyListView>
+
+
+    <TextView
+        android:id="@+id/tv_answer_detailas_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="15dip"
+        android:layout_marginRight="15dip"
+        android:background="@color/gray_light"
+        />
+
+
+</LinearLayout>

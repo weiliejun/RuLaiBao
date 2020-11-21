@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_gray_new"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingBottom="12dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/bg_recommend"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="322dp"
+          android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@mipmap/bg_recommend_white">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已推荐"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_amount_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_toRightOf="@id/tv1"
+                    android:text=""
+                    android:textColor="@color/main_color_yellow"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_amount_people"
+                    android:text="位好友"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="68dp">
+
+                <ImageView
+                    android:id="@+id/iv_recommend_invite_code"
+                    android:layout_width="114dp"
+                    android:layout_height="114dp"
+                    android:background="@color/black"
+                    android:scaleType="fitXY"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_recommend_my_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="我的推荐码："
+                    android:textColor="@color/txt_black2"
+                    android:textSize="16sp"/>
+
+                <Button
+                    android:id="@+id/btn_recommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/shape_gradient_orange"
+                    android:gravity="center"
+                    android:text="@string/setting_recommend_btn"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tv_recommend_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/setting_recommend_record"
+                    android:textColor="@color/txt_black2"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

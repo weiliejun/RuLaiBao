@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bg_gray_new"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_certification_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red3"
+        android:padding="12dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_delete"/>
+
+        <TextView
+            android:id="@+id/tv_certification_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/iv_delete"
+            android:gravity="left"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingBottom="18dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="真实姓名"
+            android:textColor="@color/txt_black2"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:maxLength="10"
+            android:text=""
+            android:textColor="@color/txt_black1"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/v_line"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_id_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="18dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="18dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="身份证号"
+            android:textColor="@color/txt_black2"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/et_id_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:hint="请输入您的身份证号"
+            android:inputType="none"
+            android:maxLength="18"
+            android:textColor="@color/txt_black1"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16sp"
+            />
+    </RelativeLayout>
+
+    <View
+        style="@style/v_line"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_employment_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:baselineAligned="false"
+        android:paddingBottom="18dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="从业岗位"
+            android:textColor="@color/txt_black2"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/et_employment_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="85dp"
+            android:background="@color/transparent"
+            android:gravity="right"
+            android:hint="请输入您的从业岗位"
+            android:inputType="text"
+            android:text=""
+            android:maxLength="15"
+            android:textColor="@color/txt_black1"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/v_line"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_business_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="18dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="名片"
+            android:textColor="@color/txt_black2"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/img_business_card"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@+id/img_arrow"
+            android:scaleType="fitXY"
+            android:src="@mipmap/bg_card_normal"/>
+
+        <ImageView
+            android:id="@+id/img_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/icon_arrow"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shape_gradient_orange"
+        tools:text="提交认证"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+    <!--占位的View,为了解决部分手机按钮下面区域不能填充父布局背景色-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray_new"/>
+</LinearLayout>

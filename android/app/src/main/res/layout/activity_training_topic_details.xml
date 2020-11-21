@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light"
+    android:orientation="vertical"
+    tools:context="com.rulaibao.activity.MainActivity">
+
+
+
+    <FrameLayout
+        android:id="@+id/fy_training_topic_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_light"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip">
+
+                <RelativeLayout
+                    android:id="@+id/rl_training_topic_upload"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_training_topic_upload"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dip"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_empty" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true">
+
+                        <ImageView
+                            android:id="@+id/iv_topic_delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/img_delete" />
+                    </FrameLayout>
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/et_topic_details_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginBottom="5dip"
+                    android:background="@drawable/shape_center_white_blank"
+                    android:hint="@string/training_class_details_discuss_comment_link_hint"
+                    android:maxLength="500"
+                    android:paddingLeft="10dip"
+                    android:textColorHint="@color/txt_mark_gray"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_training_topic_link_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="10dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="10dip"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/ll_training_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/img_training_link" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="插入链接" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_training_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/img_training_upload" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="上传图片" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dip"
+                android:layout_marginTop="5dip"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <Button
+                    android:id="@+id/btn_topic_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/main_color_yellow"
+                    android:text="@string/training_class_details_discuss_comment"
+                    android:textColor="@color/bg_white"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_topic_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/btn_topic_details"
+                    android:background="@color/bg_white"
+                    android:hint="@string/training_class_details_discuss_comment_hint"
+                    android:maxLength="500"
+                    android:paddingLeft="5dip"
+                    android:textColorHint="@color/txt_mark_gray"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <com.rulaibao.widget.MyRecyclerView
+        android:id="@+id/lv_topic_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/white"
+        android:dividerHeight="0dip"
+        android:visibility="visible"
+        android:layout_above="@id/fy_training_topic_details"
+        >
+    </com.rulaibao.widget.MyRecyclerView>
+</RelativeLayout>
+

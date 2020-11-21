@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    app:cardCornerRadius="20dp"
+    app:contentPadding="0dp">
+
+    <LinearLayout
+        android:id="@+id/rl_item_insurance_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="18dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="18dp">
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="待确认"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_insurance_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@id/tv_status"
+                android:text="国华人寿-盛世年金保险C款"
+                android:textColor="@color/txt_black1"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+
+        <View
+            style="@style/v_line"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:id="@+id/tv_insurance_premiums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="16"
+            android:paddingBottom="22dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="14dp"
+            android:text="0.00元"
+            android:textColor="@color/txt_black2"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

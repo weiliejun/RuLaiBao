@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="12dp"
+              android:paddingRight="12dp"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp">
+
+        <com.rulaibao.widget.CircularImage
+            android:id="@+id/iv_interactive_news_photo"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:src="@mipmap/img_default_photo"
+            />
+
+        <TextView
+            android:id="@+id/tv_interactive_news_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/iv_interactive_news_photo"
+            android:textColor="@color/txt_black1"
+            android:text=""
+            android:textSize="16sp"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_interactive_news_time"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:text="00:00"/>-->
+
+        <TextView
+            android:id="@+id/tv_interactive_news_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/txt_mark_gray"
+            android:textSize="14sp"
+            android:text=""/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_interactive_news_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/txt_black1"
+        android:text=""
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_interactive_news_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_reply"
+        android:text=""
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        android:textColor="@color/txt_mark_gray"/>
+
+    <View
+        style="@style/v_line"/>
+</LinearLayout>

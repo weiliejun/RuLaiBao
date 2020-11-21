@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv_ask_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/white"
+        android:dividerHeight="0dip"
+        android:visibility="visible">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dip"
+        android:paddingBottom="40dip">
+
+        <TextView
+            android:id="@+id/tv_ask_details_answer"
+            android:layout_width="55dip"
+            android:layout_height="55dip"
+            android:background="@drawable/shape_circle_orange_light"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="回答"
+            android:textColor="@color/orange"
+            android:textSize="16sp" />
+    </FrameLayout>
+</RelativeLayout>
+

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_light"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_training_answer"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:background="@color/gray_light"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_answer_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1.2dip"
+                    android:background="@color/white"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="10dip"
+                    android:text="---"
+                    android:textColor="@color/txt_black1"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_answer_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:background="@color/white"
+                    android:gravity="start"
+                    android:hint="@string/training_toanswer"
+                    android:maxLength="1000"
+                    android:minLines="8"
+                    android:paddingBottom="5dip"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:paddingTop="5dip"
+                    android:textColorHint="@color/txt_mark_gray"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_training_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginLeft="30dip"
+                    android:layout_marginRight="30dip"
+                    android:layout_marginTop="30dip"
+                    android:background="@drawable/shape_ellipse_orange_btn"
+                    android:text="@string/training_commit"
+                    android:textColor="@color/bg_white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

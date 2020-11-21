@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/vs"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray_new"
+        android:orientation="vertical">
+
+        <View
+            style="@style/v_line"/>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/sliding_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            app:tabContentStart="18dp"
+            app:tabGravity="center"
+            app:tabIndicatorColor="@color/main_color_yellow"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/txt_black1"
+            app:tabTextColor="@color/txt_black2"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <include layout="@layout/activity_empty_view"/>
+</ViewSwitcher>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbars="none"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_light"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/viewpager_layout"
+                android:layout_width="match_parent"
+                android:layout_height="145dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_vp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_point_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dip"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="invisible"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/ll_home_notice"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:padding="5dp"
+                    android:src="@mipmap/ic_home_notice"/>
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#d1d1d1"/>
+
+                <TextView
+                    android:id="@+id/marqueeView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/txt_gray"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:ellipsize="end"/>
+               <!-- <com.rulaibao.uitls.MarqueeView
+                    android:id="@+id/marqueeView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    app:mvTextColor="@color/txt_gray"
+                    app:mvDirection="bottom_to_top"
+                    app:mvAnimDuration="1000"
+                    app:mvInterval="3000"
+                    app:mvSingleLine="true"/>-->
+            </LinearLayout>
+            <include layout="@layout/activity_home_view"/>
+            <LinearLayout
+                android:id="@+id/ll_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/gray_dark"
+                    android:text="重磅推荐"
+                    android:background="@color/white"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_light"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@color/white">
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/home_viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                    <LinearLayout
+                        android:id="@+id/home_indicator"
+                        android:layout_width="fill_parent"
+                        android:layout_height="20.0dip"
+                        android:gravity="center_horizontal"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="horizontal" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/gray_dark"
+                android:text="热销精品"
+                android:background="@color/gray_light"/>
+            <com.rulaibao.widget.MyListView
+                android:id="@+id/home_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:dividerHeight="10dp"
+                android:listSelector="#00000000"/>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>

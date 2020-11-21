@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <GridView
+        android:id="@+id/gridview_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="4"
+        android:gravity="center"
+        android:verticalSpacing="20dp"
+        android:stretchMode="columnWidth"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+    </GridView>
+
+    <TextView
+        android:id="@+id/tv_lines"
+        android:layout_below="@+id/gridview_share"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/gray_light"/>
+
+    <TextView
+        android:id="@+id/dialog_cancel"
+        android:layout_below="@+id/tv_lines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/gray_dark"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bg_gray_new"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_circle_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="圈子/小组名称"
+            android:textColor="@color/txt_black1"
+            android:textSize="16sp"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_group_name"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@id/tv_circle_name"-->
+            <!--android:text="/小组名称"-->
+            <!--android:textColor="@color/txt_black1"-->
+            <!--android:textSize="16sp"/>-->
+    </RelativeLayout>
+
+    <View
+        style="@style/v_line"
+        android:layout_alignParentBottom="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="12dp">
+
+        <ImageView
+            android:id="@+id/iv_item_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/img_arrow_right"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_item_arrow"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:id="@+id/tv_topic_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                tools:text="中纪委发文谈落马"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/txt_gray_d"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_zan_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_topic_title"
+                android:layout_marginTop="10dp"
+                tools:text="2"
+                android:textColor="@color/txt_mark_gray"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/iv_zan_checked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_zan_number"
+                android:layout_alignBottom="@id/tv_zan_number"
+                android:layout_marginLeft="3dp"
+                android:paddingBottom="3.5dp"
+                android:src="@mipmap/img_zaned_icon"/>
+
+            <TextView
+                android:id="@+id/tv_comment_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_topic_title"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/iv_zan_checked"
+                tools:text="2"
+                android:textColor="@color/txt_mark_gray"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/iv_small_bell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_zan_number"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/tv_comment_number"
+                android:src="@mipmap/img_message_icon"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

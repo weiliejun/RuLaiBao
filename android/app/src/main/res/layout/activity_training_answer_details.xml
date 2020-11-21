@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light"
+    android:orientation="vertical"
+    tools:context="com.rulaibao.activity.MainActivity">
+
+    <com.rulaibao.widget.MyRecyclerView
+        android:id="@+id/lv_answer_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="42dip"
+        android:layout_marginTop="1.2dip"
+        android:divider="@color/white"
+        android:dividerHeight="0dip"
+        android:visibility="visible">
+
+    </com.rulaibao.widget.MyRecyclerView>
+
+    <FrameLayout
+        android:id="@+id/fl_answer_details"
+        android:layout_width="match_parent"
+        android:layout_height="42dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_light"
+        android:paddingBottom="5dip"
+        android:paddingLeft="12dip"
+        android:paddingRight="12dip"
+        android:paddingTop="5dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_answer_details"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/main_color_yellow"
+                android:text="@string/training_class_details_discuss_comment"
+                android:textColor="@color/bg_white"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_answer_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/btn_answer_details"
+                android:background="@color/bg_white"
+                android:hint="@string/training_class_details_discuss_comment_hint"
+                android:maxLength="500"
+                android:paddingLeft="5dip"
+                android:textColorHint="@color/txt_mark_gray"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>
+
+

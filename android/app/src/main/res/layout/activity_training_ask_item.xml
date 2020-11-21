@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_light"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingTop="12dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingBottom="15dip"
+        >
+        <TextView
+            android:id="@+id/tv_training_ask_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="@color/txt_black2"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            >
+            <TextView
+                android:id="@+id/tv_training_ask_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0回答"
+                android:textSize="12sp"
+                android:textColor="@color/txt_mark_gray"
+                />
+
+            <TextView
+                android:id="@+id/tv_training_ask_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="0分钟前"
+                android:textSize="12sp"
+                android:textColor="@color/txt_mark_gray"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dip"
+            >
+            <com.rulaibao.widget.CircularImage
+                android:id="@+id/iv_training_ask"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:src="@mipmap/img_default_photo"
+                />
+            <TextView
+                android:id="@+id/tv_training_ask_manager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text=""
+                android:textSize="14sp"
+                android:layout_gravity="center_vertical"
+
+                />
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_training_ask_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text=""
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dip"
+        android:text=" "/>
+
+</LinearLayout>
+

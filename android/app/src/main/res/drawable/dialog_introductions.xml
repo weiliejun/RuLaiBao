@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:text="收支说明" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:gravity="left"
+            android:lineSpacingExtra="2dp"
+            android:layout_marginTop="15dp"
+            android:text="房产成交：根据已提交客户确认信息，客服核实后，客户交完首付款并签约后为房产成交，房产成交后可获得佣金收益。" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:gravity="left"
+            android:lineSpacingExtra="2dp"
+            android:layout_marginTop="10dp"
+            android:text="活动奖励：
+1、销售人员加入大富翁的有188元奖励在账户，首单成交可激活奖励并进行提现。
+2、推荐人推荐的销售人员甲成功房产成交，第一推荐人提甲成交总房款千分之三作为奖励，甲又推荐销售人员乙成功房产成交的，第一推荐人按乙成交房总款的千分之一作为奖励。甲按乙成功房产成交总房款的千分之三。" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:gravity="left"
+            android:lineSpacingExtra="2dp"
+            android:layout_marginTop="10dp"
+            android:text="提现：客户信息确认  提现人本人信息确认  客服确认客户首付款交齐、签约后30个工作日在账户中提现。" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:gravity="left"
+            android:lineSpacingExtra="2dp"
+            android:layout_marginTop="10dp"
+            android:text="注意事项：提交真实信息遇到问题及时与客服联系 所经营收入均含税。
+" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/img_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:src="@mipmap/img_dialog_delete"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

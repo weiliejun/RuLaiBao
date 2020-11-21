@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light"
+    android:scrollbars="none"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dip"
+            android:layout_marginTop="10dip"
+            android:background="@color/white"
+            >
+            <com.rulaibao.widget.CircularImage
+                android:id="@+id/iv_introduction"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_marginLeft="20dip"
+                android:src="@mipmap/img_verify_password"
+                android:layout_centerVertical="true"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dip"
+                android:layout_toRightOf="@id/iv_introduction"
+                android:layout_centerVertical="true"
+                >
+                <TextView
+                    android:id="@+id/tv_introduction_manager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="---"
+                    android:textSize="16sp"
+                    android:textColor="@color/txt_black2"
+                    />
+                <TextView
+                    android:id="@+id/tv_introduction_manager_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="---"
+                    android:textSize="16sp"
+                    android:textColor="@color/txt_black2"
+                    />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+            <TextView
+                android:id="@+id/tv_introduction_class_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="15dip"
+                android:text="---"
+                android:textSize="16sp"
+                android:textColor="@color/txt_black1"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dip"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:text="课程时间："
+                    android:textColor="@color/txt_mark_gray"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_introduction_class_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2000-01-01"
+                    android:textColor="@color/txt_black2"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="课程类型："
+                    android:textColor="@color/txt_mark_gray"
+                    android:layout_marginLeft="15dip"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_introduction_class_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="---"
+                    android:textColor="@color/txt_black2"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dip"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:background="@color/gray_light"
+                android:layout_marginTop="20dip"
+                />
+            <LinearLayout
+                android:id="@+id/ll_guarantee"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dip"
+                android:layout_marginLeft="0dip"
+                android:layout_marginBottom="20dip"
+                >
+
+                <WebView
+                    android:id="@+id/tv_introduction_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/txt_light_gray"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <!--<TextView
+                android:id="@+id/tv_introduction_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dip"
+                android:layout_marginLeft="15dip"
+                android:layout_marginBottom="20dip"
+                android:text="-&#45;&#45;"
+
+                />-->
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="----"
+                android:visibility="gone"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
+
+
+
+

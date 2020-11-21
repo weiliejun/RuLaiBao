@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+
+
+    >
+    <com.rulaibao.widget.CircularImage
+        android:id="@+id/iv_mycircle_sign"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:src="@mipmap/img_circle_icon"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginBottom="10dip"
+        android:layout_centerVertical="true"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_circle_join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="15dip"
+        android:layout_centerVertical="true"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:background="@drawable/shape_ellipse_orange_btn"
+        android:text="+ 加入"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/iv_mycircle_sign"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="15dip"
+        android:layout_toLeftOf="@id/tv_circle_join"
+        android:layout_marginRight="10dip"
+        >
+        <TextView
+            android:id="@+id/tv_mycircle_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="圈子名称"
+            android:textColor="@color/txt_black1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:id="@+id/tv_mycircle_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="圈子描述圈子描述圈子描述圈子描述圈子描述圈子描述圈子描述"
+            android:textColor="@color/txt_mark_gray"
+            android:singleLine="true"
+            android:ellipsize="end"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

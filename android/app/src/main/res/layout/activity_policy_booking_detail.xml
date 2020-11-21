@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="8dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_gray_new"
+            android:orientation="vertical">
+
+            <!-- 驳回原因   -->
+            <RelativeLayout
+                android:id="@+id/rl_audit_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red3"
+                android:paddingBottom="12dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="12dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_delete"/>
+
+                <TextView
+                    android:id="@+id/tv_turn_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginRight="15dp"
+                   android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/iv_delete"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text=""
+                    android:textColor="@color/txt_black1"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+
+            <!-- 产品名称 -->
+            <RelativeLayout
+                android:id="@+id/rl_insurance_name"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="15dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/iv_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_arrow"/>
+
+                <TextView
+                    android:id="@+id/tv_insurance_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@id/iv_arrow"
+                    android:text=""
+                    android:textColor="@color/txt_black1"
+                    android:textSize="16sp"/>
+
+                <View
+                    style="@style/v_line"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <!-- 详情明细 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/policy_booking_status"
+                        android:textColor="@color/txt_black2"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_policy_booking_status"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text=""
+                        android:textColor="@color/txt_black2"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/policy_booking_time"
+                        android:textColor="@color/txt_black2"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_policy_booking_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text=""
+                        android:textColor="@color/txt_black2"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/policy_booking_people"
+                        android:textColor="@color/txt_black2"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_policy_booking_people"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_weight="4"
+                        android:text=""
+                        android:textColor="@color/txt_black2"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/policy_booking_phone"
+                        android:textColor="@color/txt_black2"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_policy_booking_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text=""
+                        android:textColor="@color/txt_black2"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/insurance_company"
+                        android:textColor="@color/txt_black2"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_insurance_company"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text=""
+                        android:textColor="@color/txt_black2"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/insurance_plan"
+                        android:textColor="@color/txt_black2"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_insurance_plan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text=""
+                        android:textColor="@color/txt_black2"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/insurance_amount"
+                        android:textColor="@color/txt_black2"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_insurance_amount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text=""
+                        android:textColor="@color/txt_black2"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/annual_premium"
+                        android:textColor="@color/txt_black2"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_annual_premium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text=""
+                        android:textColor="@color/txt_black2"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/insurance_period"
+                        android:textColor="@color/txt_black2"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_insurance_period"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text=""
+                        android:textColor="@color/txt_black2"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/payment_period"
+                        android:textColor="@color/txt_black2"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_payment_period"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text=""
+                        android:textColor="@color/txt_black2"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="22dp"
+                    android:layout_marginTop="22dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/expected_policy"
+                        android:textColor="@color/txt_black2"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_expected_policy"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text=""
+                        android:textColor="@color/txt_black2"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- 备注 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="@string/remarks"
+                    android:textColor="@color/txt_black1"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tv_remarks_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:lineSpacingExtra="6dp"
+                    android:text=""
+                    android:textColor="@color/txt_black2"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/white"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_cancel_booking"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:background="@drawable/shape_gradient_orange"
+        android:gravity="center|center_vertical"
+        android:text="@string/btn_cancel_booking"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+</RelativeLayout>

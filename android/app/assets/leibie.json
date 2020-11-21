@@ -1,0 +1,2334 @@
+{
+    "areaBeans": [
+        {
+            "areaid": "1-01-01",
+            "name": "安徽省",
+            "pinyin": "Anhui",
+            "shortpinyin": "AH",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-01-01",
+            "name": "安庆市",
+            "type": "c",
+            "parentId": "1-01-01"
+        },
+        {
+            "areaid": "1-01-01-02",
+            "name": "蚌埠市",
+            "type": "c",
+            "parentId": "1-01-01"
+        },
+        {
+            "areaid": "1-01-01-04",
+            "name": "巢湖市",
+            "type": "c",
+            "parentId": "1-01-01"
+        },
+        {
+            "areaid": "1-01-01-06",
+            "name": "滁州市",
+            "type": "c",
+            "parentId": "1-01-01"
+        },
+        {
+            "areaid": "1-01-01-17",
+            "name": "阜阳市",
+            "type": "c",
+            "parentId": "1-01-01"
+        },
+        {
+            "areaid": "1-01-01-22",
+            "name": "亳州市",
+            "type": "c",
+            "parentId": "1-01-01"
+        },
+        {
+            "areaid": "1-01-01-23",
+            "name": "合肥市",
+            "type": "c",
+            "parentId": "1-01-01"
+        },
+        {
+            "areaid": "1-01-01-27",
+            "name": "淮北市",
+            "type": "c",
+            "parentId": "1-01-01"
+        },
+        {
+            "areaid": "1-01-01-28",
+            "name": "淮南市",
+            "type": "c",
+            "parentId": "1-01-01"
+        },
+        {
+            "areaid": "1-01-01-29",
+            "name": "黄山市",
+            "type": "c",
+            "parentId": "1-01-01"
+        },
+        {
+            "areaid": "1-01-01-42",
+            "name": "六安市",
+            "type": "c",
+            "parentId": "1-01-01"
+        },
+        {
+            "areaid": "1-01-01-44",
+            "name": "马鞍山市",
+            "type": "c",
+            "parentId": "1-01-01"
+        },
+        {
+            "areaid": "1-01-01-58",
+            "name": "宿州市",
+            "type": "c",
+            "parentId": "1-01-01"
+        },
+        {
+            "areaid": "1-01-01-65",
+            "name": "铜陵市",
+            "type": "c",
+            "parentId": "1-01-01"
+        },
+        {
+            "areaid": "1-01-01-71",
+            "name": "芜湖市",
+            "type": "c",
+            "parentId": "1-01-01"
+        },
+        {
+            "areaid": "1-01-01-76",
+            "name": "宣城市",
+            "type": "c",
+            "parentId": "1-01-01"
+        },
+        {
+            "areaid": "1-01-01-81",
+            "name": "池州市",
+            "type": "c",
+            "parentId": "1-01-01"
+        },
+        {
+            "areaid": "1-01-02",
+            "name": "北京市",
+            "pinyin": "Beijing",
+            "shortpinyin": "BJ",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-02-01",
+            "name": "市辖区",
+            "type": "c",
+            "parentId": "1-01-02"
+        },
+        {
+            "areaid": "1-01-02-02",
+            "name": "县",
+            "type": "c",
+            "parentId": "1-01-02"
+        },
+        {
+            "areaid": "1-01-03",
+            "name": "福建省",
+            "pinyin": "Fujian",
+            "shortpinyin": "FJ",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-03-12",
+            "name": "福州市",
+            "type": "c",
+            "parentId": "1-01-03"
+        },
+        {
+            "areaid": "1-01-03-26",
+            "name": "龙岩市",
+            "type": "c",
+            "parentId": "1-01-03"
+        },
+        {
+            "areaid": "1-01-03-33",
+            "name": "南平市",
+            "type": "c",
+            "parentId": "1-01-03"
+        },
+        {
+            "areaid": "1-01-03-35",
+            "name": "宁德市",
+            "type": "c",
+            "parentId": "1-01-03"
+        },
+        {
+            "areaid": "1-01-03-40",
+            "name": "莆田市",
+            "type": "c",
+            "parentId": "1-01-03"
+        },
+        {
+            "areaid": "1-01-03-43",
+            "name": "泉州市",
+            "type": "c",
+            "parentId": "1-01-03"
+        },
+        {
+            "areaid": "1-01-03-44",
+            "name": "三明市",
+            "type": "c",
+            "parentId": "1-01-03"
+        },
+        {
+            "areaid": "1-01-03-56",
+            "name": "厦门市",
+            "type": "c",
+            "parentId": "1-01-03"
+        },
+        {
+            "areaid": "1-01-03-65",
+            "name": "漳州市",
+            "type": "c",
+            "parentId": "1-01-03"
+        },
+        {
+            "areaid": "1-01-04",
+            "name": "甘肃省",
+            "pinyin": "Gansu",
+            "shortpinyin": "GS",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-04-07",
+            "name": "定西市",
+            "type": "c",
+            "parentId": "1-01-04"
+        },
+        {
+            "areaid": "1-01-04-25",
+            "name": "嘉峪关市",
+            "type": "c",
+            "parentId": "1-01-04"
+        },
+        {
+            "areaid": "1-01-04-29",
+            "name": "酒泉市",
+            "type": "c",
+            "parentId": "1-01-04"
+        },
+        {
+            "areaid": "1-01-04-32",
+            "name": "兰州市",
+            "type": "c",
+            "parentId": "1-01-04"
+        },
+        {
+            "areaid": "1-01-04-37",
+            "name": "临夏回族自治州",
+            "type": "c",
+            "parentId": "1-01-04"
+        },
+        {
+            "areaid": "1-01-04-47",
+            "name": "平凉市",
+            "type": "c",
+            "parentId": "1-01-04"
+        },
+        {
+            "areaid": "1-01-04-50",
+            "name": "庆阳市",
+            "type": "c",
+            "parentId": "1-01-04"
+        },
+        {
+            "areaid": "1-01-04-54",
+            "name": "天水市",
+            "type": "c",
+            "parentId": "1-01-04"
+        },
+        {
+            "areaid": "1-01-04-61",
+            "name": "武威市",
+            "type": "c",
+            "parentId": "1-01-04"
+        },
+        {
+            "areaid": "1-01-04-70",
+            "name": "张掖市",
+            "type": "c",
+            "parentId": "1-01-04"
+        },
+        {
+            "areaid": "1-01-04-78",
+            "name": "甘南藏族自治州",
+            "type": "c",
+            "parentId": "1-01-04"
+        },
+        {
+            "areaid": "1-01-04-90",
+            "name": "白银市",
+            "type": "c",
+            "parentId": "1-01-04"
+        },
+        {
+            "areaid": "1-01-04-91",
+            "name": "金昌市",
+            "type": "c",
+            "parentId": "1-01-04"
+        },
+        {
+            "areaid": "1-01-04-92",
+            "name": "陇南市",
+            "type": "c",
+            "parentId": "1-01-04"
+        },
+        {
+            "areaid": "1-01-05",
+            "name": "广东省",
+            "pinyin": "Guangdong",
+            "shortpinyin": "GD",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-05-04",
+            "name": "东莞市",
+            "type": "c",
+            "parentId": "1-01-05"
+        },
+        {
+            "areaid": "1-01-05-07",
+            "name": "佛山市",
+            "type": "c",
+            "parentId": "1-01-05"
+        },
+        {
+            "areaid": "1-01-05-08",
+            "name": "广州市",
+            "type": "c",
+            "parentId": "1-01-05"
+        },
+        {
+            "areaid": "1-01-05-11",
+            "name": "河源市",
+            "type": "c",
+            "parentId": "1-01-05"
+        },
+        {
+            "areaid": "1-01-05-16",
+            "name": "惠州市",
+            "type": "c",
+            "parentId": "1-01-05"
+        },
+        {
+            "areaid": "1-01-05-17",
+            "name": "江门市",
+            "type": "c",
+            "parentId": "1-01-05"
+        },
+        {
+            "areaid": "1-01-05-25",
+            "name": "茂名市",
+            "type": "c",
+            "parentId": "1-01-05"
+        },
+        {
+            "areaid": "1-01-05-26",
+            "name": "梅州市",
+            "type": "c",
+            "parentId": "1-01-05"
+        },
+        {
+            "areaid": "1-01-05-28",
+            "name": "清远市",
+            "type": "c",
+            "parentId": "1-01-05"
+        },
+        {
+            "areaid": "1-01-05-32",
+            "name": "汕头市",
+            "type": "c",
+            "parentId": "1-01-05"
+        },
+        {
+            "areaid": "1-01-05-33",
+            "name": "韶关市",
+            "type": "c",
+            "parentId": "1-01-05"
+        },
+        {
+            "areaid": "1-01-05-34",
+            "name": "深圳市",
+            "type": "c",
+            "parentId": "1-01-05"
+        },
+        {
+            "areaid": "1-01-05-38",
+            "name": "阳江市",
+            "type": "c",
+            "parentId": "1-01-05"
+        },
+        {
+            "areaid": "1-01-05-42",
+            "name": "湛江市",
+            "type": "c",
+            "parentId": "1-01-05"
+        },
+        {
+            "areaid": "1-01-05-43",
+            "name": "肇庆市",
+            "type": "c",
+            "parentId": "1-01-05"
+        },
+        {
+            "areaid": "1-01-05-44",
+            "name": "中山市",
+            "type": "c",
+            "parentId": "1-01-05"
+        },
+        {
+            "areaid": "1-01-05-45",
+            "name": "珠海市",
+            "type": "c",
+            "parentId": "1-01-05"
+        },
+        {
+            "areaid": "1-01-05-90",
+            "name": "潮州市",
+            "type": "c",
+            "parentId": "1-01-05"
+        },
+        {
+            "areaid": "1-01-05-91",
+            "name": "揭阳市",
+            "type": "c",
+            "parentId": "1-01-05"
+        },
+        {
+            "areaid": "1-01-05-92",
+            "name": "汕尾市",
+            "type": "c",
+            "parentId": "1-01-05"
+        },
+        {
+            "areaid": "1-01-05-93",
+            "name": "云浮市",
+            "type": "c",
+            "parentId": "1-01-05"
+        },
+        {
+            "areaid": "1-01-06",
+            "name": "广西壮族自治区",
+            "pinyin": "Guangxi",
+            "shortpinyin": "GX",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-06-02",
+            "name": "百色市",
+            "type": "c",
+            "parentId": "1-01-06"
+        },
+        {
+            "areaid": "1-01-06-03",
+            "name": "北海市",
+            "type": "c",
+            "parentId": "1-01-06"
+        },
+        {
+            "areaid": "1-01-06-05",
+            "name": "崇左市",
+            "type": "c",
+            "parentId": "1-01-06"
+        },
+        {
+            "areaid": "1-01-06-09",
+            "name": "防城港市",
+            "type": "c",
+            "parentId": "1-01-06"
+        },
+        {
+            "areaid": "1-01-06-12",
+            "name": "贵港市",
+            "type": "c",
+            "parentId": "1-01-06"
+        },
+        {
+            "areaid": "1-01-06-13",
+            "name": "桂林市",
+            "type": "c",
+            "parentId": "1-01-06"
+        },
+        {
+            "areaid": "1-01-06-15",
+            "name": "河池市",
+            "type": "c",
+            "parentId": "1-01-06"
+        },
+        {
+            "areaid": "1-01-06-18",
+            "name": "来宾市",
+            "type": "c",
+            "parentId": "1-01-06"
+        },
+        {
+            "areaid": "1-01-06-21",
+            "name": "柳州市",
+            "type": "c",
+            "parentId": "1-01-06"
+        },
+        {
+            "areaid": "1-01-06-28",
+            "name": "南宁市",
+            "type": "c",
+            "parentId": "1-01-06"
+        },
+        {
+            "areaid": "1-01-06-31",
+            "name": "钦州市",
+            "type": "c",
+            "parentId": "1-01-06"
+        },
+        {
+            "areaid": "1-01-06-38",
+            "name": "梧州市",
+            "type": "c",
+            "parentId": "1-01-06"
+        },
+        {
+            "areaid": "1-01-06-90",
+            "name": "贺州市",
+            "type": "c",
+            "parentId": "1-01-06"
+        },
+        {
+            "areaid": "1-01-06-91",
+            "name": "玉林市",
+            "type": "c",
+            "parentId": "1-01-06"
+        },
+        {
+            "areaid": "1-01-07",
+            "name": "贵州省",
+            "pinyin": "Guizhou",
+            "shortpinyin": "GZ",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-07-01",
+            "name": "安顺地区",
+            "type": "c",
+            "parentId": "1-01-07"
+        },
+        {
+            "areaid": "1-01-07-02",
+            "name": "毕节地区",
+            "type": "c",
+            "parentId": "1-01-07"
+        },
+        {
+            "areaid": "1-01-07-09",
+            "name": "贵阳市",
+            "type": "c",
+            "parentId": "1-01-07"
+        },
+        {
+            "areaid": "1-01-07-13",
+            "name": "六盘水市",
+            "type": "c",
+            "parentId": "1-01-07"
+        },
+        {
+            "areaid": "1-01-07-25",
+            "name": "铜仁市",
+            "type": "c",
+            "parentId": "1-01-07"
+        },
+        {
+            "areaid": "1-01-07-36",
+            "name": "遵义市",
+            "type": "c",
+            "parentId": "1-01-07"
+        },
+        {
+            "areaid": "1-01-07-90",
+            "name": "黔东南苗族侗族自治州",
+            "type": "c",
+            "parentId": "1-01-07"
+        },
+        {
+            "areaid": "1-01-07-91",
+            "name": "黔南布依族苗族自治州",
+            "type": "c",
+            "parentId": "1-01-07"
+        },
+        {
+            "areaid": "1-01-07-92",
+            "name": "黔西南布依族苗族自治州",
+            "type": "c",
+            "parentId": "1-01-07"
+        },
+        {
+            "areaid": "1-01-08",
+            "name": "海南省",
+            "pinyin": "Hainan",
+            "shortpinyin": "HN",
+            "type": "s"
+        },
+      	{
+            "areaid": "1-01-08-08",
+            "name": "海口市",
+            "type": "c",
+            "parentId": "1-01-08"
+        },
+       
+        {
+            "areaid": "1-01-08-15",
+            "name": "三亚",
+            "type": "c",
+            "parentId": "1-01-08"
+        },
+       
+        {
+            "areaid": "1-01-08-91",
+            "name": "省直辖县级行政单位",
+            "type": "c",
+            "parentId": "1-01-08"
+        },
+        {
+            "areaid": "1-01-09",
+            "name": "河北省",
+            "pinyin": "Hebei",
+            "shortpinyin": "HB",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-09-02",
+            "name": "保定市",
+            "type": "c",
+            "parentId": "1-01-09"
+        },
+        {
+            "areaid": "1-01-09-04",
+            "name": "承德市",
+            "type": "c",
+            "parentId": "1-01-09"
+        },
+        {
+            "areaid": "1-01-09-12",
+            "name": "邯郸市",
+            "type": "c",
+            "parentId": "1-01-09"
+        },
+        {
+            "areaid": "1-01-09-28",
+            "name": "秦皇岛市",
+            "type": "c",
+            "parentId": "1-01-09"
+        },
+        {
+            "areaid": "1-01-09-35",
+            "name": "石家庄市",
+            "type": "c",
+            "parentId": "1-01-09"
+        },
+        {
+            "areaid": "1-01-09-37",
+            "name": "唐山市",
+            "type": "c",
+            "parentId": "1-01-09"
+        },
+        {
+            "areaid": "1-01-09-44",
+            "name": "邢台市",
+            "type": "c",
+            "parentId": "1-01-09"
+        },
+        {
+            "areaid": "1-01-09-48",
+            "name": "张家口市",
+            "type": "c",
+            "parentId": "1-01-09"
+        },
+        {
+            "areaid": "1-01-09-52",
+            "name": "衡水市",
+            "type": "c",
+            "parentId": "1-01-09"
+        },
+        {
+            "areaid": "1-01-09-90",
+            "name": "沧州市",
+            "type": "c",
+            "parentId": "1-01-09"
+        },
+        {
+            "areaid": "1-01-09-91",
+            "name": "廊坊市",
+            "type": "c",
+            "parentId": "1-01-09"
+        },
+        {
+            "areaid": "1-01-10",
+            "name": "河南省",
+            "pinyin": "Henan",
+            "shortpinyin": "HN",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-10-01",
+            "name": "安阳市",
+            "type": "c",
+            "parentId": "1-01-10"
+        },
+        {
+            "areaid": "1-01-10-06",
+            "name": "鹤壁市",
+            "type": "c",
+            "parentId": "1-01-10"
+        },
+       
+        {
+            "areaid": "1-01-10-11",
+            "name": "焦作市",
+            "type": "c",
+            "parentId": "1-01-10"
+        },
+        {
+            "areaid": "1-01-10-12",
+            "name": "开封市",
+            "type": "c",
+            "parentId": "1-01-10"
+        },
+        {
+            "areaid": "1-01-10-14",
+            "name": "洛阳市",
+            "type": "c",
+            "parentId": "1-01-10"
+        },
+        {
+            "areaid": "1-01-10-16",
+            "name": "平顶山市",
+            "type": "c",
+            "parentId": "1-01-10"
+        },
+        {
+            "areaid": "1-01-10-18",
+            "name": "三门峡市",
+            "type": "c",
+            "parentId": "1-01-10"
+        },
+        {
+            "areaid": "1-01-10-22",
+            "name": "新乡市",
+            "type": "c",
+            "parentId": "1-01-10"
+        },
+        {
+            "areaid": "1-01-10-24",
+            "name": "信阳市",
+            "type": "c",
+            "parentId": "1-01-10"
+        },
+        {
+            "areaid": "1-01-10-28",
+            "name": "郑州市",
+            "type": "c",
+            "parentId": "1-01-10"
+        },
+        {
+            "areaid": "1-01-10-31",
+            "name": "南阳市",
+            "type": "c",
+            "parentId": "1-01-10"
+        },
+        {
+            "areaid": "1-01-10-33",
+            "name": "商丘市",
+            "type": "c",
+            "parentId": "1-01-10"
+        },
+        {
+            "areaid": "1-01-10-34",
+            "name": "驻马店市",
+            "type": "c",
+            "parentId": "1-01-10"
+        },
+        {
+            "areaid": "1-01-10-90",
+            "name": "许昌市",
+            "type": "c",
+            "parentId": "1-01-10"
+        },
+        {
+            "areaid": "1-01-10-91",
+            "name": "周口市",
+            "type": "c",
+            "parentId": "1-01-10"
+        },
+        {
+            "areaid": "1-01-10-92",
+            "name": "漯河市",
+            "type": "c",
+            "parentId": "1-01-10"
+        },
+        {
+            "areaid": "1-01-10-93",
+            "name": "濮阳市",
+            "type": "c",
+            "parentId": "1-01-10"
+        },
+        {
+            "areaid": "1-01-11",
+            "name": "黑龙江省",
+            "pinyin": "Heilongjiang",
+            "shortpinyin": "HLJ",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-11-03",
+            "name": "大庆市",
+            "type": "c",
+            "parentId": "1-01-11"
+        },
+        {
+            "areaid": "1-01-11-05",
+            "name": "哈尔滨市",
+            "type": "c",
+            "parentId": "1-01-11"
+        },
+        {
+            "areaid": "1-01-11-07",
+            "name": "鹤岗市",
+            "type": "c",
+            "parentId": "1-01-11"
+        },
+        {
+            "areaid": "1-01-11-08",
+            "name": "黑河市",
+            "type": "c",
+            "parentId": "1-01-11"
+        },
+        {
+            "areaid": "1-01-11-11",
+            "name": "佳木斯市",
+            "type": "c",
+            "parentId": "1-01-11"
+        },
+        {
+            "areaid": "1-01-11-15",
+            "name": "牡丹江市",
+            "type": "c",
+            "parentId": "1-01-11"
+        },
+        {
+            "areaid": "1-01-11-16",
+            "name": "齐齐哈尔市",
+            "type": "c",
+            "parentId": "1-01-11"
+        },
+        {
+            "areaid": "1-01-11-19",
+            "name": "双鸭山市",
+            "type": "c",
+            "parentId": "1-01-11"
+        },
+        {
+            "areaid": "1-01-11-20",
+            "name": "绥化市",
+            "type": "c",
+            "parentId": "1-01-11"
+        },
+        {
+            "areaid": "1-01-11-25",
+            "name": "伊春市",
+            "type": "c",
+            "parentId": "1-01-11"
+        },
+        {
+            "areaid": "1-01-11-90",
+            "name": "大兴安岭地区",
+            "type": "c",
+            "parentId": "1-01-11"
+        },
+        {
+            "areaid": "1-01-11-91",
+            "name": "鸡西市",
+            "type": "c",
+            "parentId": "1-01-11"
+        },
+        {
+            "areaid": "1-01-11-92",
+            "name": "七台河市",
+            "type": "c",
+            "parentId": "1-01-11"
+        },
+        {
+            "areaid": "1-01-12",
+            "name": "湖北省",
+            "pinyin": "Hubei",
+            "shortpinyin": "HB",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-12-03",
+            "name": "鄂州市",
+            "type": "c",
+            "parentId": "1-01-12"
+        },
+        {
+            "areaid": "1-01-12-04",
+            "name": "恩施土家族苗族自治州",
+            "type": "c",
+            "parentId": "1-01-12"
+        },
+        {
+            "areaid": "1-01-12-08",
+            "name": "黄石市",
+            "type": "c",
+            "parentId": "1-01-12"
+        },
+       
+        {
+            "areaid": "1-01-12-11",
+            "name": "十堰市",
+            "type": "c",
+            "parentId": "1-01-12"
+        },
+        {
+            "areaid": "1-01-12-13",
+            "name": "武汉市",
+            "type": "c",
+            "parentId": "1-01-12"
+        },
+        {
+            "areaid": "1-01-12-14",
+            "name": "襄阳市",
+            "type": "c",
+            "parentId": "1-01-12"
+        },
+        {
+            "areaid": "1-01-12-15",
+            "name": "孝感市",
+            "type": "c",
+            "parentId": "1-01-12"
+        },
+        {
+            "areaid": "1-01-12-16",
+            "name": "宜昌市",
+            "type": "c",
+            "parentId": "1-01-12"
+        },
+        {
+            "areaid": "1-01-12-20",
+            "name": "随州市",
+            "type": "c",
+            "parentId": "1-01-12"
+        },
+        {
+            "areaid": "1-01-12-22",
+            "name": "荆州市",
+            "type": "c",
+            "parentId": "1-01-12"
+        },
+        {
+            "areaid": "1-01-12-24",
+            "name": "黄冈市",
+            "type": "c",
+            "parentId": "1-01-12"
+        },
+        {
+            "areaid": "1-01-12-90",
+            "name": "荆门市",
+            "type": "c",
+            "parentId": "1-01-12"
+        },
+        
+        {
+            "areaid": "1-01-12-92",
+            "name": "省直辖县级行政单位",
+            "type": "c",
+            "parentId": "1-01-12"
+        },
+      
+        {
+            "areaid": "1-01-12-94",
+            "name": "咸宁市",
+            "type": "c",
+            "parentId": "1-01-12"
+        },
+        {
+            "areaid": "1-01-13",
+            "name": "湖南省",
+            "pinyin": "Hunan",
+            "shortpinyin": "HN",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-13-03",
+            "name": "长沙市",
+            "type": "c",
+            "parentId": "1-01-13"
+        },
+        {
+            "areaid": "1-01-13-04",
+            "name": "常德市",
+            "type": "c",
+            "parentId": "1-01-13"
+        },
+        {
+            "areaid": "1-01-13-06",
+            "name": "郴州市",
+            "type": "c",
+            "parentId": "1-01-13"
+        },
+        {
+            "areaid": "1-01-13-07",
+            "name": "衡阳市",
+            "type": "c",
+            "parentId": "1-01-13"
+        },
+        {
+            "areaid": "1-01-13-09",
+            "name": "怀化市",
+            "type": "c",
+            "parentId": "1-01-13"
+        },
+        {
+            "areaid": "1-01-13-10",
+            "name": "湘西土家族苗族自治州",
+            "type": "c",
+            "parentId": "1-01-13"
+        },
+        {
+            "areaid": "1-01-13-18",
+            "name": "邵阳市",
+            "type": "c",
+            "parentId": "1-01-13"
+        },
+        {
+            "areaid": "1-01-13-20",
+            "name": "湘潭市",
+            "type": "c",
+            "parentId": "1-01-13"
+        },
+        {
+            "areaid": "1-01-13-25",
+            "name": "岳阳市",
+            "type": "c",
+            "parentId": "1-01-13"
+        },
+        {
+            "areaid": "1-01-13-26",
+            "name": "张家界市",
+            "type": "c",
+            "parentId": "1-01-13"
+        },
+        {
+            "areaid": "1-01-13-27",
+            "name": "株洲市",
+            "type": "c",
+            "parentId": "1-01-13"
+        },
+        {
+            "areaid": "1-01-13-90",
+            "name": "娄底市",
+            "type": "c",
+            "parentId": "1-01-13"
+        },
+        {
+            "areaid": "1-01-13-91",
+            "name": "益阳市",
+            "type": "c",
+            "parentId": "1-01-13"
+        },
+        {
+            "areaid": "1-01-13-92",
+            "name": "永州市",
+            "type": "c",
+            "parentId": "1-01-13"
+        },
+        {
+            "areaid": "1-01-14",
+            "name": "吉林省",
+            "pinyin": "Jilin",
+            "shortpinyin": "JL",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-14-02",
+            "name": "长春市",
+            "type": "c",
+            "parentId": "1-01-14"
+        },
+        {
+            "areaid": "1-01-14-08",
+            "name": "吉林市",
+            "type": "c",
+            "parentId": "1-01-14"
+        },
+        {
+            "areaid": "1-01-14-14",
+            "name": "四平市",
+            "type": "c",
+            "parentId": "1-01-14"
+        },
+        {
+            "areaid": "1-01-14-22",
+            "name": "通化市",
+            "type": "c",
+            "parentId": "1-01-14"
+        },
+        {
+            "areaid": "1-01-14-90",
+            "name": "白城市",
+            "type": "c",
+            "parentId": "1-01-14"
+        },
+        {
+            "areaid": "1-01-14-91",
+            "name": "白山市",
+            "type": "c",
+            "parentId": "1-01-14"
+        },
+        {
+            "areaid": "1-01-14-92",
+            "name": "辽源市",
+            "type": "c",
+            "parentId": "1-01-14"
+        },
+        {
+            "areaid": "1-01-14-93",
+            "name": "松原市",
+            "type": "c",
+            "parentId": "1-01-14"
+        },
+        {
+            "areaid": "1-01-14-94",
+            "name": "延边朝鲜族自治州",
+            "type": "c",
+            "parentId": "1-01-14"
+        },
+        {
+            "areaid": "1-01-15",
+            "name": "江苏省",
+            "pinyin": "Jiangsu",
+            "shortpinyin": "JS",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-15-03",
+            "name": "常州市",
+            "type": "c",
+            "parentId": "1-01-15"
+        },
+        {
+            "areaid": "1-01-15-11",
+            "name": "淮安市",
+            "type": "c",
+            "parentId": "1-01-15"
+        },
+        {
+            "areaid": "1-01-15-19",
+            "name": "连云港市",
+            "type": "c",
+            "parentId": "1-01-15"
+        },
+        {
+            "areaid": "1-01-15-22",
+            "name": "南京市",
+            "type": "c",
+            "parentId": "1-01-15"
+        },
+        {
+            "areaid": "1-01-15-23",
+            "name": "南通市",
+            "type": "c",
+            "parentId": "1-01-15"
+        },
+        {
+            "areaid": "1-01-15-31",
+            "name": "苏州市",
+            "type": "c",
+            "parentId": "1-01-15"
+        },
+        {
+            "areaid": "1-01-15-32",
+            "name": "宿迁市",
+            "type": "c",
+            "parentId": "1-01-15"
+        },
+        {
+            "areaid": "1-01-15-35",
+            "name": "泰州市",
+            "type": "c",
+            "parentId": "1-01-15"
+        },
+        {
+            "areaid": "1-01-15-37",
+            "name": "无锡市",
+            "type": "c",
+            "parentId": "1-01-15"
+        },
+        {
+            "areaid": "1-01-15-42",
+            "name": "徐州市",
+            "type": "c",
+            "parentId": "1-01-15"
+        },
+        {
+            "areaid": "1-01-15-43",
+            "name": "盐城市",
+            "type": "c",
+            "parentId": "1-01-15"
+        },
+        {
+            "areaid": "1-01-15-44",
+            "name": "扬州市",
+            "type": "c",
+            "parentId": "1-01-15"
+        },
+        {
+            "areaid": "1-01-15-46",
+            "name": "镇江市",
+            "type": "c",
+            "parentId": "1-01-15"
+        },
+        {
+            "areaid": "1-01-16",
+            "name": "江西省",
+            "pinyin": "Jiangxi",
+            "shortpinyin": "JX",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-16-05",
+            "name": "赣州市",
+            "type": "c",
+            "parentId": "1-01-16"
+        },
+        {
+            "areaid": "1-01-16-11",
+            "name": "景德镇市",
+            "type": "c",
+            "parentId": "1-01-16"
+        },
+        {
+            "areaid": "1-01-16-12",
+            "name": "九江市",
+            "type": "c",
+            "parentId": "1-01-16"
+        },
+        {
+            "areaid": "1-01-16-14",
+            "name": "南昌市",
+            "type": "c",
+            "parentId": "1-01-16"
+        },
+        {
+            "areaid": "1-01-16-16",
+            "name": "萍乡市",
+            "type": "c",
+            "parentId": "1-01-16"
+        },
+        {
+            "areaid": "1-01-16-19",
+            "name": "上饶市",
+            "type": "c",
+            "parentId": "1-01-16"
+        },
+        {
+            "areaid": "1-01-16-26",
+            "name": "鹰潭市",
+            "type": "c",
+            "parentId": "1-01-16"
+        },
+        {
+            "areaid": "1-01-16-32",
+            "name": "吉安市",
+            "type": "c",
+            "parentId": "1-01-16"
+        },
+        {
+            "areaid": "1-01-16-90",
+            "name": "抚州市",
+            "type": "c",
+            "parentId": "1-01-16"
+        },
+        {
+            "areaid": "1-01-16-91",
+            "name": "新余市",
+            "type": "c",
+            "parentId": "1-01-16"
+        },
+        {
+            "areaid": "1-01-16-92",
+            "name": "宜春市",
+            "type": "c",
+            "parentId": "1-01-16"
+        },
+        {
+            "areaid": "1-01-17",
+            "name": "辽宁省",
+            "pinyin": "Liaoning",
+            "shortpinyin": "LN",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-17-01",
+            "name": "鞍山市",
+            "type": "c",
+            "parentId": "1-01-17"
+        },
+        {
+            "areaid": "1-01-17-05",
+            "name": "本溪市",
+            "type": "c",
+            "parentId": "1-01-17"
+        },
+        {
+            "areaid": "1-01-17-08",
+            "name": "朝阳市",
+            "type": "c",
+            "parentId": "1-01-17"
+        },
+        {
+            "areaid": "1-01-17-09",
+            "name": "大连市",
+            "type": "c",
+            "parentId": "1-01-17"
+        },
+        {
+            "areaid": "1-01-17-11",
+            "name": "丹东市",
+            "type": "c",
+            "parentId": "1-01-17"
+        },
+        {
+            "areaid": "1-01-17-16",
+            "name": "抚顺市",
+            "type": "c",
+            "parentId": "1-01-17"
+        },
+        {
+            "areaid": "1-01-17-17",
+            "name": "阜新市",
+            "type": "c",
+            "parentId": "1-01-17"
+        },
+        {
+            "areaid": "1-01-17-27",
+            "name": "锦州市",
+            "type": "c",
+            "parentId": "1-01-17"
+        },
+        {
+            "areaid": "1-01-17-31",
+            "name": "辽阳市",
+            "type": "c",
+            "parentId": "1-01-17"
+        },
+        {
+            "areaid": "1-01-17-36",
+            "name": "沈阳市",
+            "type": "c",
+            "parentId": "1-01-17"
+        },
+        {
+            "areaid": "1-01-17-40",
+            "name": "铁岭市",
+            "type": "c",
+            "parentId": "1-01-17"
+        },
+        {
+            "areaid": "1-01-17-48",
+            "name": "营口市",
+            "type": "c",
+            "parentId": "1-01-17"
+        },
+        {
+            "areaid": "1-01-17-52",
+            "name": "葫芦岛市",
+            "type": "c",
+            "parentId": "1-01-17"
+        },
+        {
+            "areaid": "1-01-17-90",
+            "name": "盘锦市",
+            "type": "c",
+            "parentId": "1-01-17"
+        },
+        {
+            "areaid": "1-01-18",
+            "name": "内蒙古自治区",
+            "pinyin": "Neimenggu",
+            "shortpinyin": "NMG",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-18-04",
+            "name": "包头市",
+            "type": "c",
+            "parentId": "1-01-18"
+        },
+        {
+            "areaid": "1-01-18-09",
+            "name": "赤峰市",
+            "type": "c",
+            "parentId": "1-01-18"
+        },
+        {
+            "areaid": "1-01-18-20",
+            "name": "呼和浩特市",
+            "type": "c",
+            "parentId": "1-01-18"
+        },
+        {
+            "areaid": "1-01-18-34",
+            "name": "乌海市",
+            "type": "c",
+            "parentId": "1-01-18"
+        },
+        {
+            "areaid": "1-01-18-47",
+            "name": "阿拉善盟",
+            "type": "c",
+            "parentId": "1-01-18"
+        },
+        {
+            "areaid": "1-01-18-90",
+            "name": "巴彦淖尔市",
+            "type": "c",
+            "parentId": "1-01-18"
+        },
+        {
+            "areaid": "1-01-18-91",
+            "name": "鄂尔多斯市",
+            "type": "c",
+            "parentId": "1-01-18"
+        },
+        {
+            "areaid": "1-01-18-92",
+            "name": "呼伦贝尔市",
+            "type": "c",
+            "parentId": "1-01-18"
+        },
+        {
+            "areaid": "1-01-18-93",
+            "name": "通辽市",
+            "type": "c",
+            "parentId": "1-01-18"
+        },
+        {
+            "areaid": "1-01-18-94",
+            "name": "乌兰察布市",
+            "type": "c",
+            "parentId": "1-01-18"
+        },
+        {
+            "areaid": "1-01-18-95",
+            "name": "锡林郭勒盟",
+            "type": "c",
+            "parentId": "1-01-18"
+        },
+        {
+            "areaid": "1-01-18-96",
+            "name": "兴安盟",
+            "type": "c",
+            "parentId": "1-01-18"
+        },
+        {
+            "areaid": "1-01-19",
+            "name": "宁夏回族自治区",
+            "pinyin": "Ningxia",
+            "shortpinyin": "NX",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-19-01",
+            "name": "固原市",
+            "type": "c",
+            "parentId": "1-01-19"
+        },
+        {
+            "areaid": "1-01-19-09",
+            "name": "石嘴山市",
+            "type": "c",
+            "parentId": "1-01-19"
+        },
+        {
+            "areaid": "1-01-19-12",
+            "name": "吴忠市",
+            "type": "c",
+            "parentId": "1-01-19"
+        },
+        {
+            "areaid": "1-01-19-15",
+            "name": "银川市",
+            "type": "c",
+            "parentId": "1-01-19"
+        },
+	 {
+            "areaid": "1-01-19-16",
+            "name": "中卫市",
+            "type": "c",
+            "parentId": "1-01-19"
+        },
+        {
+            "areaid": "1-01-20",
+            "name": "青海省",
+            "pinyin": "Qinghai",
+            "shortpinyin": "QH",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-20-33",
+            "name": "西宁市",
+            "type": "c",
+            "parentId": "1-01-20"
+        },
+        {
+            "areaid": "1-01-20-36",
+            "name": "玉树藏族自治州",
+            "type": "c",
+            "parentId": "1-01-20"
+        },
+        {
+            "areaid": "1-01-20-90",
+            "name": "果洛藏族自治州",
+            "type": "c",
+            "parentId": "1-01-20"
+        },
+        {
+            "areaid": "1-01-20-91",
+            "name": "海北藏族自治州",
+            "type": "c",
+            "parentId": "1-01-20"
+        },
+        {
+            "areaid": "1-01-20-92",
+            "name": "海东地区",
+            "type": "c",
+            "parentId": "1-01-20"
+        },
+        {
+            "areaid": "1-01-20-93",
+            "name": "黄南藏族自治州",
+            "type": "c",
+            "parentId": "1-01-20"
+        },
+        {
+            "areaid": "1-01-20-94",
+            "name": "海西蒙古族藏族自治州",
+            "type": "c",
+            "parentId": "1-01-20"
+        },
+        {
+            "areaid": "1-01-20-95",
+            "name": "黄南藏族自治州",
+            "type": "c",
+            "parentId": "1-01-20"
+        },
+        {
+            "areaid": "1-01-21",
+            "name": "山东省",
+            "pinyin": "Shandong",
+            "shortpinyin": "SD",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-21-03",
+            "name": "滨州市",
+            "type": "c",
+            "parentId": "1-01-21"
+        },
+        {
+            "areaid": "1-01-21-06",
+            "name": "德州市",
+            "type": "c",
+            "parentId": "1-01-21"
+        },
+        {
+            "areaid": "1-01-21-07",
+            "name": "东营市",
+            "type": "c",
+            "parentId": "1-01-21"
+        },
+        {
+            "areaid": "1-01-21-13",
+            "name": "济南市",
+            "type": "c",
+            "parentId": "1-01-21"
+        },
+        {
+            "areaid": "1-01-21-29",
+            "name": "青岛市",
+            "type": "c",
+            "parentId": "1-01-21"
+        },
+        {
+            "areaid": "1-01-21-33",
+            "name": "泰安市",
+            "type": "c",
+            "parentId": "1-01-21"
+        },
+        {
+            "areaid": "1-01-21-35",
+            "name": "威海市",
+            "type": "c",
+            "parentId": "1-01-21"
+        },
+        {
+            "areaid": "1-01-21-36",
+            "name": "潍坊市",
+            "type": "c",
+            "parentId": "1-01-21"
+        },
+        {
+            "areaid": "1-01-21-41",
+            "name": "烟台市",
+            "type": "c",
+            "parentId": "1-01-21"
+        },
+        {
+            "areaid": "1-01-21-44",
+            "name": "枣庄市",
+            "type": "c",
+            "parentId": "1-01-21"
+        },
+        {
+            "areaid": "1-01-21-48",
+            "name": "淄博市",
+            "type": "c",
+            "parentId": "1-01-21"
+        },
+        {
+            "areaid": "1-01-21-50",
+            "name": "临沂市",
+            "type": "c",
+            "parentId": "1-01-21"
+        },
+        {
+            "areaid": "1-01-21-52",
+            "name": "日照市",
+            "type": "c",
+            "parentId": "1-01-21"
+        },
+        {
+            "areaid": "1-01-21-90",
+            "name": "菏泽市",
+            "type": "c",
+            "parentId": "1-01-21"
+        },
+        {
+            "areaid": "1-01-21-91",
+            "name": "济宁市",
+            "type": "c",
+            "parentId": "1-01-21"
+        },
+        {
+            "areaid": "1-01-21-92",
+            "name": "莱芜市",
+            "type": "c",
+            "parentId": "1-01-21"
+        },
+        {
+            "areaid": "1-01-21-93",
+            "name": "聊城市",
+            "type": "c",
+            "parentId": "1-01-21"
+        },
+        {
+            "areaid": "1-01-22",
+            "name": "山西省",
+            "pinyin": "Shanxi",
+            "shortpinyin": "SX",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-22-02",
+            "name": "长治市",
+            "type": "c",
+            "parentId": "1-01-22"
+        },
+        {
+            "areaid": "1-01-22-03",
+            "name": "大同市",
+            "type": "c",
+            "parentId": "1-01-22"
+        },
+        {
+            "areaid": "1-01-22-18",
+            "name": "临汾市",
+            "type": "c",
+            "parentId": "1-01-22"
+        },
+        {
+            "areaid": "1-01-22-35",
+            "name": "太原市",
+            "type": "c",
+            "parentId": "1-01-22"
+        },
+        {
+            "areaid": "1-01-22-44",
+            "name": "阳泉市",
+            "type": "c",
+            "parentId": "1-01-22"
+        },
+        {
+            "areaid": "1-01-22-50",
+            "name": "运城市",
+            "type": "c",
+            "parentId": "1-01-22"
+        },
+        {
+            "areaid": "1-01-22-53",
+            "name": "晋城市",
+            "type": "c",
+            "parentId": "1-01-22"
+        },
+        {
+            "areaid": "1-01-22-90",
+            "name": "晋中市",
+            "type": "c",
+            "parentId": "1-01-22"
+        },
+        {
+            "areaid": "1-01-22-91",
+            "name": "吕梁市",
+            "type": "c",
+            "parentId": "1-01-22"
+        },
+        {
+            "areaid": "1-01-22-92",
+            "name": "朔州市",
+            "type": "c",
+            "parentId": "1-01-22"
+        },
+        {
+            "areaid": "1-01-22-93",
+            "name": "忻州市",
+            "type": "c",
+            "parentId": "1-01-22"
+        },
+        {
+            "areaid": "1-01-23",
+            "name": "陕西省",
+            "pinyin": "Shanxi",
+            "shortpinyin": "SX",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-23-01",
+            "name": "安康市",
+            "type": "c",
+            "parentId": "1-01-23"
+        },
+        {
+            "areaid": "1-01-23-03",
+            "name": "宝鸡市",
+            "type": "c",
+            "parentId": "1-01-23"
+        },
+        {
+            "areaid": "1-01-23-14",
+            "name": "汉中市",
+            "type": "c",
+            "parentId": "1-01-23"
+        },
+        {
+            "areaid": "1-01-23-33",
+            "name": "铜川市",
+            "type": "c",
+            "parentId": "1-01-23"
+        },
+        {
+            "areaid": "1-01-23-37",
+            "name": "西安市",
+            "type": "c",
+            "parentId": "1-01-23"
+        },
+        {
+            "areaid": "1-01-23-38",
+            "name": "咸阳市",
+            "type": "c",
+            "parentId": "1-01-23"
+        },
+        {
+            "areaid": "1-01-23-39",
+            "name": "延安市",
+            "type": "c",
+            "parentId": "1-01-23"
+        },
+        {
+            "areaid": "1-01-23-46",
+            "name": "榆林市",
+            "type": "c",
+            "parentId": "1-01-23"
+        },
+        {
+            "areaid": "1-01-23-90",
+            "name": "商洛市",
+            "type": "c",
+            "parentId": "1-01-23"
+        },
+        {
+            "areaid": "1-01-23-91",
+            "name": "渭南市",
+            "type": "c",
+            "parentId": "1-01-23"
+        },
+       
+        {
+            "areaid": "1-01-24",
+            "name": "上海市",
+            "pinyin": "Shanghai",
+            "shortpinyin": "SH",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-24-01",
+            "name": "市辖区",
+            "type": "c",
+            "parentId": "1-01-24"
+        },
+	{
+            "areaid": "1-01-24-02",
+            "name": "县",
+            "type": "c",
+            "parentId": "1-01-24"
+        },
+        {
+            "areaid": "1-01-25",
+            "name": "四川省",
+            "pinyin": "Sichuan",
+            "shortpinyin": "SC",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-25-03",
+            "name": "巴中市",
+            "type": "c",
+            "parentId": "1-01-25"
+        },
+        {
+            "areaid": "1-01-25-05",
+            "name": "成都市",
+            "type": "c",
+            "parentId": "1-01-25"
+        },
+        {
+            "areaid": "1-01-25-10",
+            "name": "德阳市",
+            "type": "c",
+            "parentId": "1-01-25"
+        },
+        {
+            "areaid": "1-01-25-14",
+            "name": "广元市",
+            "type": "c",
+            "parentId": "1-01-25"
+        },
+        {
+            "areaid": "1-01-25-22",
+            "name": "乐山市",
+            "type": "c",
+            "parentId": "1-01-25"
+        },
+        {
+            "areaid": "1-01-25-24",
+            "name": "绵阳市",
+            "type": "c",
+            "parentId": "1-01-25"
+        },
+        {
+            "areaid": "1-01-25-26",
+            "name": "内江市",
+            "type": "c",
+            "parentId": "1-01-25"
+        },
+        {
+            "areaid": "1-01-25-39",
+            "name": "遂宁市",
+            "type": "c",
+            "parentId": "1-01-25"
+        },
+        {
+            "areaid": "1-01-25-47",
+            "name": "宜宾市",
+            "type": "c",
+            "parentId": "1-01-25"
+        },
+        {
+            "areaid": "1-01-25-49",
+            "name": "资阳市",
+            "type": "c",
+            "parentId": "1-01-25"
+        },
+        {
+            "areaid": "1-01-25-54",
+            "name": "自贡市",
+            "type": "c",
+            "parentId": "1-01-25"
+        },
+        {
+            "areaid": "1-01-25-55",
+            "name": "阿坝藏族羌族自治州",
+            "type": "c",
+            "parentId": "1-01-25"
+        },
+        {
+            "areaid": "1-01-25-56",
+            "name": "甘孜藏族自治州",
+            "type": "c",
+            "parentId": "1-01-25"
+        },
+        {
+            "areaid": "1-01-25-63",
+            "name": "南充市",
+            "type": "c",
+            "parentId": "1-01-25"
+        },
+        {
+            "areaid": "1-01-25-69",
+            "name": "雅安市",
+            "type": "c",
+            "parentId": "1-01-25"
+        },
+        {
+            "areaid": "1-01-25-90",
+            "name": "达州市",
+            "type": "c",
+            "parentId": "1-01-25"
+        },
+        {
+            "areaid": "1-01-25-91",
+            "name": "广安市",
+            "type": "c",
+            "parentId": "1-01-25"
+        },
+        {
+            "areaid": "1-01-25-92",
+            "name": "凉山彝族自治州",
+            "type": "c",
+            "parentId": "1-01-25"
+        },
+        {
+            "areaid": "1-01-25-93",
+            "name": "眉山市",
+            "type": "c",
+            "parentId": "1-01-25"
+        },
+        {
+            "areaid": "1-01-25-94",
+            "name": "攀枝花市",
+            "type": "c",
+            "parentId": "1-01-25"
+        },
+        {
+            "areaid": "1-01-25-95",
+            "name": "泸州市",
+            "type": "c",
+            "parentId": "1-01-25"
+        },
+        {
+            "areaid": "1-01-26",
+            "name": "天津市",
+            "pinyin": "Tianjin",
+            "shortpinyin": "TJ",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-26-01",
+            "name": "市辖区",
+            "type": "c",
+            "parentId": "1-01-26"
+        },
+        {
+            "areaid": "1-01-26-02",
+            "name": "县",
+            "type": "c",
+            "parentId": "1-01-26"
+        },
+        {
+            "areaid": "1-01-27",
+            "name": "西藏自治区",
+            "pinyin": "Xizang",
+            "shortpinyin": "XZ",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-27-18",
+            "name": "拉萨市",
+            "type": "c",
+            "parentId": "1-01-27"
+        },
+        {
+            "areaid": "1-01-27-20",
+            "name": "林芝地区",
+            "type": "c",
+            "parentId": "1-01-27"
+        },
+        {
+            "areaid": "1-01-27-28",
+            "name": "那曲地区",
+            "type": "c",
+            "parentId": "1-01-27"
+        },
+        {
+            "areaid": "1-01-27-32",
+            "name": "日喀则地区",
+            "type": "c",
+            "parentId": "1-01-27"
+        },
+        {
+            "areaid": "1-01-27-36",
+            "name": "阿里地区",
+            "type": "c",
+            "parentId": "1-01-27"
+        },
+        {
+            "areaid": "1-01-27-40",
+            "name": "山南地区",
+            "type": "c",
+            "parentId": "1-01-27"
+        },
+        {
+            "areaid": "1-01-27-90",
+            "name": "昌都地区",
+            "type": "c",
+            "parentId": "1-01-27"
+        },
+        {
+            "areaid": "1-01-28",
+            "name": "新疆维吾尔自治区",
+            "pinyin": "Xinjiang",
+            "shortpinyin": "XJ",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-28-01",
+            "name": "阿克苏地区",
+            "type": "c",
+            "parentId": "1-01-28"
+        },
+        {
+            "areaid": "1-01-28-02",
+            "name": "阿勒泰地区",
+            "type": "c",
+            "parentId": "1-01-28"
+        },
+        {
+            "areaid": "1-01-28-03",
+            "name": "塔城地区",
+            "type": "c",
+            "parentId": "1-01-28"
+        },
+        {
+            "areaid": "1-01-28-12",
+            "name": "和田地区",
+            "type": "c",
+            "parentId": "1-01-28"
+        },
+        {
+            "areaid": "1-01-28-15",
+            "name": "克拉玛依市",
+            "type": "c",
+            "parentId": "1-01-28"
+        },
+        {
+            "areaid": "1-01-28-29",
+            "name": "自治区直辖县级行政单位",
+            "type": "c",
+            "parentId": "1-01-28"
+        },
+        {
+            "areaid": "1-01-28-30",
+            "name": "吐鲁番地区",
+            "type": "c",
+            "parentId": "1-01-28"
+        },
+        {
+            "areaid": "1-01-28-34",
+            "name": "乌鲁木齐市",
+            "type": "c",
+            "parentId": "1-01-28"
+        },
+       
+        {
+            "areaid": "1-01-28-91",
+            "name": "巴音郭楞蒙古自治州",
+            "type": "c",
+            "parentId": "1-01-28"
+        },
+        {
+            "areaid": "1-01-28-92",
+            "name": "博尔塔拉蒙古自治州",
+            "type": "c",
+            "parentId": "1-01-28"
+        },
+        {
+            "areaid": "1-01-28-93",
+            "name": "昌吉回族自治州",
+            "type": "c",
+            "parentId": "1-01-28"
+        },
+        {
+            "areaid": "1-01-28-94",
+            "name": "哈密地区",
+            "type": "c",
+            "parentId": "1-01-28"
+        },
+        {
+            "areaid": "1-01-28-95",
+            "name": "喀什地区",
+            "type": "c",
+            "parentId": "1-01-28"
+        },
+        {
+            "areaid": "1-01-28-96",
+            "name": "克孜勒苏柯尔克孜自治州",
+            "type": "c",
+            "parentId": "1-01-28"
+        },
+       
+        {
+            "areaid": "1-01-28-99",
+            "name": "伊犁哈萨克自治州",
+            "type": "c",
+            "parentId": "1-01-28"
+        },
+        {
+            "areaid": "1-01-29",
+            "name": "云南省",
+            "pinyin": "Yunnan",
+            "shortpinyin": "YN",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-29-02",
+            "name": "保山市",
+            "type": "c",
+            "parentId": "1-01-29"
+        },
+        {
+            "areaid": "1-01-29-05",
+            "name": "楚雄彝族自治州",
+            "type": "c",
+            "parentId": "1-01-29"
+        },
+        {
+            "areaid": "1-01-29-07",
+            "name": "大理白族自治州",
+            "type": "c",
+            "parentId": "1-01-29"
+        },
+        {
+            "areaid": "1-01-29-08",
+            "name": "德宏傣族景颇族自治州",
+            "type": "c",
+            "parentId": "1-01-29"
+        },
+        {
+            "areaid": "1-01-29-09",
+            "name": "迪庆藏族自治州",
+            "type": "c",
+            "parentId": "1-01-29"
+        },
+        {
+            "areaid": "1-01-29-15",
+            "name": "红河哈尼族彝族自治州",
+            "type": "c",
+            "parentId": "1-01-29"
+        },
+        {
+            "areaid": "1-01-29-22",
+            "name": "昆明市",
+            "type": "c",
+            "parentId": "1-01-29"
+        },
+        {
+            "areaid": "1-01-29-23",
+            "name": "丽江市",
+            "type": "c",
+            "parentId": "1-01-29"
+        },
+        {
+            "areaid": "1-01-29-32",
+            "name": "曲靖市",
+            "type": "c",
+            "parentId": "1-01-29"
+        },
+        {
+            "areaid": "1-01-29-35",
+            "name": "普洱市",
+            "type": "c",
+            "parentId": "1-01-29"
+        },
+        {
+            "areaid": "1-01-29-40",
+            "name": "文山壮族苗族自治州",
+            "type": "c",
+            "parentId": "1-01-29"
+        },
+        {
+            "areaid": "1-01-29-41",
+            "name": "西双版纳傣族自治州",
+            "type": "c",
+            "parentId": "1-01-29"
+        },
+        {
+            "areaid": "1-01-29-51",
+            "name": "玉溪市",
+            "type": "c",
+            "parentId": "1-01-29"
+        },
+        {
+            "areaid": "1-01-29-53",
+            "name": "昭通市",
+            "type": "c",
+            "parentId": "1-01-29"
+        },
+        {
+            "areaid": "1-01-29-64",
+            "name": "怒江傈僳族自治州",
+            "type": "c",
+            "parentId": "1-01-29"
+        },
+        {
+            "areaid": "1-01-29-65",
+            "name": "临沧市",
+            "type": "c",
+            "parentId": "1-01-29"
+        },
+        {
+            "areaid": "1-01-30",
+            "name": "浙江省",
+            "pinyin": "Zhejiang",
+            "shortpinyin": "ZJ",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-30-16",
+            "name": "杭州市",
+            "type": "c",
+            "parentId": "1-01-30"
+        },
+        {
+            "areaid": "1-01-30-17",
+            "name": "湖州市",
+            "type": "c",
+            "parentId": "1-01-30"
+        },
+        {
+            "areaid": "1-01-30-20",
+            "name": "嘉兴市",
+            "type": "c",
+            "parentId": "1-01-30"
+        },
+        {
+            "areaid": "1-01-30-24",
+            "name": "金华市",
+            "type": "c",
+            "parentId": "1-01-30"
+        },
+        {
+            "areaid": "1-01-30-29",
+            "name": "丽水市",
+            "type": "c",
+            "parentId": "1-01-30"
+        },
+        {
+            "areaid": "1-01-30-33",
+            "name": "宁波市",
+            "type": "c",
+            "parentId": "1-01-30"
+        },
+        {
+            "areaid": "1-01-30-39",
+            "name": "舟山市",
+            "type": "c",
+            "parentId": "1-01-30"
+        },
+        {
+            "areaid": "1-01-30-42",
+            "name": "衢州市",
+            "type": "c",
+            "parentId": "1-01-30"
+        },
+        {
+            "areaid": "1-01-30-46",
+            "name": "绍兴市",
+            "type": "c",
+            "parentId": "1-01-30"
+        },
+        {
+            "areaid": "1-01-30-56",
+            "name": "温州市",
+            "type": "c",
+            "parentId": "1-01-30"
+        },
+        {
+            "areaid": "1-01-30-74",
+            "name": "台州市",
+            "type": "c",
+            "parentId": "1-01-30"
+        },
+        {
+            "areaid": "1-01-31",
+            "name": "重庆市",
+            "pinyin": "Chongqing",
+            "shortpinyin": "CQ",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-31-01",
+            "name": "市辖区",
+            "type": "c",
+            "parentId": "1-01-31"
+        },
+	 {
+            "areaid": "1-01-31-02",
+            "name": "县",
+            "type": "c",
+            "parentId": "1-01-31"
+        },
+        {
+            "areaid": "1-01-32",
+            "name": "香港特别行政区",
+            "pinyin": "Xianggang",
+            "shortpinyin": "XG",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-32-01",
+            "name": "市辖区",
+            "type": "c",
+            "parentId": "1-01-32"
+        },
+        {
+            "areaid": "1-01-33",
+            "name": "澳门特别行政区",
+            "pinyin": "Aomen",
+            "shortpinyin": "AM",
+            "type": "s"
+        },
+        {
+            "areaid": "1-01-33-01",
+            "name": "市辖区",
+            "type": "c",
+            "parentId": "1-01-33"
+        },
+        {
+            "areaid": "1-01-34",
+            "name": "台湾省",
+            "pinyin": "Taiwan",
+            "shortpinyin": "TW",
+            "type": "s"
+        },
+       
+        {
+            "areaid": "1-01-34-04",
+            "name": "台北市",
+            "type": "c",
+            "parentId": "1-01-34"
+        }
+    ]
+}

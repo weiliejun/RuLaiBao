@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#ff3392c9</color>
+    <color name="gray_light">#F2F2F2</color>
+    <color name="white">#fefefefe</color>
+    <color name="gray_d">#ff999999</color>
+    <color name="bg_top">#F5F5F5</color>
+    <color name="orange">#ff9911</color>
+    <color name="bg_blue">#4f75ff</color>
+    <color name="gray_dark">#696969</color>
+
+    <color name="txt_black">#333333</color>
+    <color name="txt_black_light">#666666</color>
+    <color name="txt_mark_gray">#999999</color>
+
+</resources>

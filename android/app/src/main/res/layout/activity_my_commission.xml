@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray_new"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/tv_accumulated_commission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:text="50000.00"
+                android:textColor="@color/main_color_yellow"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_accumulated_commission"
+                android:gravity="center"
+                android:text="@string/accumulated_commission"
+                android:textColor="@color/txt_black2"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        style="@style/v_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp">
+
+        <LinearLayout
+            android:id="@+id/ll_waiting_commission"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_waiting_commission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="200.00"
+                android:textColor="@color/txt_black1"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/waiting_commission"
+                android:textColor="@color/txt_black1"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="45dp"
+            android:background="@color/txt_black1"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_my_commission"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_get_commission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="200.00"
+                android:textColor="@color/txt_black1"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/my_commission"
+                android:textColor="@color/txt_black1"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/bg_line"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_my_payroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:id="@+id/tv_my_payroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_payroll"
+            android:textColor="@color/txt_black1"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_my_payroll"
+            android:text="@string/my_payroll_desc"
+            android:textColor="@color/txt_black2"
+            android:textSize="12sp"/>
+
+        <ImageView
+            style="@style/iv_right_arrow"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/v_line"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_my_bank_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:id="@+id/tv_my_bank_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_bank_card"
+            android:textColor="@color/txt_black1"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_my_bank_card"
+            android:text="@string/my_bank_card_desc"
+            android:textColor="@color/txt_black2"
+            android:textSize="12sp"/>
+
+        <ImageView
+            style="@style/iv_right_arrow"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/v_line"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_tax_rules"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:id="@+id/tv_tax_rules"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扣税规则"
+            android:textColor="@color/txt_black1"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_tax_rules"
+            android:text="@string/tax_rules_desc"
+            android:textColor="@color/txt_black2"
+            android:textSize="12sp"/>
+
+        <ImageView
+            style="@style/iv_right_arrow"/>
+    </RelativeLayout>
+
+</LinearLayout>

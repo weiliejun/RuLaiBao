@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp">
+
+            <View
+                android:id="@+id/v_vertical_line1"
+                android:layout_width="2.5dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:background="@color/green"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/v_vertical_line1"
+                android:text="佣金收入"
+                android:textColor="@color/txt_black1"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+        <View
+            style="@style/v_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="佣金收益"
+                android:textColor="@color/txt_black1"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_commission_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:maxLength="17"
+                android:maxLines="1"
+                android:text="0.00元"
+                android:textColor="@color/txt_black1"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp">
+
+            <View
+                android:id="@+id/v_vertical_line2"
+                android:layout_width="2.5dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:background="@color/blue_light"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/v_vertical_line2"
+                android:text="佣金扣减"
+                android:textColor="@color/txt_black1"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+        <View
+            style="@style/v_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="个人所得税"
+                android:textColor="@color/txt_black1"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_personal_income_tax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:maxLength="17"
+                android:maxLines="1"
+                android:text="0.00元"
+                android:textColor="@color/txt_black1"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+        <View
+            style="@style/v_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="增值税"
+                android:textColor="@color/txt_black1"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_value_added_tax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:maxLength="17"
+                android:maxLines="1"
+                android:textColor="@color/txt_black1"
+                android:textSize="16sp"
+                tools:text="0.00元"/>
+        </RelativeLayout>
+
+        <View
+            style="@style/v_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="附加税"
+                android:textColor="@color/txt_black1"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_additional_tax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:maxLength="17"
+                android:maxLines="1"
+                android:textColor="@color/txt_black1"
+                android:textSize="16sp"
+                tools:text="0.00元"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp">
+
+            <View
+                android:id="@+id/v_vertical_line3"
+                android:layout_width="2.5dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:background="@color/orange"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/v_vertical_line3"
+                android:text="发放明细"
+                android:textColor="@color/txt_black1"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+        <View
+            style="@style/v_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="银行帐号"
+                android:textColor="@color/txt_black1"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_bank_card_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:maxLength="19"
+                android:maxLines="1"
+                tools:text="45489213694857812"
+                android:textColor="@color/txt_black1"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+        <View
+            style="@style/v_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="到账金额"
+                android:textColor="@color/txt_black1"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_total_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:maxLength="17"
+                android:maxLines="1"
+                tools:text="0.00元"
+                android:textColor="@color/txt_black1"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+        <View
+            style="@style/v_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="状态"
+                android:textColor="@color/txt_black1"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_transfer_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:maxLength="10"
+                android:maxLines="1"
+                tools:text="转账成功"
+                android:textColor="@color/txt_black1"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_look_commission_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:paddingBottom="55dp"
+            android:gravity="center"
+            android:text="@string/check_commission_details"
+            android:textColor="@color/txt_black1"
+            android:textSize="13sp"/>
+    </LinearLayout>
+</ScrollView>

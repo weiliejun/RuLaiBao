@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/gray_light"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_renewal_reminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp">
+
+        <ImageView
+            android:id="@+id/iv_renewal_reminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/icon_renewal_reminder"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/iv_renewal_reminder"
+            android:text="@string/txt_renewal_reminder"
+            android:textColor="@color/txt_black1"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            style="@style/iv_right_arrow"/>
+
+        <TextView
+            android:id="@+id/tv_renewal_numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/iv_arrow"
+            android:background="@drawable/shape_circle_red"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="8"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/v_line"
+        android:layout_alignParentBottom="true"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_my_bookings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp">
+
+        <ImageView
+            android:id="@+id/iv_my_bookings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/icon_my_booking"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/iv_my_bookings"
+            android:text="@string/txt_my_bookings"
+            android:textColor="@color/txt_black1"
+            android:textSize="16sp"/>
+
+        <ImageView
+            style="@style/iv_right_arrow"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/v_line"
+        android:layout_alignParentBottom="true"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_my_ask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp">
+
+        <ImageView
+            android:id="@+id/iv_my_ask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/icon_my_ask"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/iv_my_ask"
+            android:text="@string/txt_my_ask"
+            android:textColor="@color/txt_black1"
+            android:textSize="16sp"/>
+
+        <ImageView
+            style="@style/iv_right_arrow"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/v_line"
+        android:layout_alignParentBottom="true"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_my_topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp">
+
+        <ImageView
+            android:id="@+id/iv_my_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/icon_my_topic"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/iv_my_topic"
+            android:text="@string/txt_my_topic"
+            android:textColor="@color/txt_black1"
+            android:textSize="16sp"/>
+
+        <ImageView
+            style="@style/iv_right_arrow"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/v_line"
+        android:layout_alignParentBottom="true"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_my_participation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp">
+
+        <ImageView
+            android:id="@+id/iv_my_participation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/icon_my_particpation"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/iv_my_participation"
+            android:text="@string/txt_my_participation"
+            android:textColor="@color/txt_black1"
+            android:textSize="16sp"/>
+
+        <ImageView
+            style="@style/iv_right_arrow"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/v_line"
+        android:layout_alignParentBottom="true"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_my_collection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp">
+
+        <ImageView
+            android:id="@+id/iv_my_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/icon_my_collection"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/iv_my_collection"
+            android:text="@string/txt_my_collection"
+            android:textColor="@color/txt_black1"
+            android:textSize="16sp"/>
+
+        <ImageView
+            style="@style/iv_right_arrow"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/v_line"
+        android:layout_alignParentBottom="true"/>
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray">
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/title_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/txt_black1"
+            android:ellipsize="end"
+            android:maxEms="12"
+            android:text="保单规划"
+            android:textSize="18sp" />
+        <LinearLayout
+            android:id="@+id/titlebar_btcontainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/top_title_frame"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_right_btn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@mipmap/ic_search"
+                android:layout_marginRight="12dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ViewSwitcher
+        android:id="@+id/vs"
+        android:layout_below="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_gray_new"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lv_policy_plan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:divider="@color/gray_light"/>
+
+        <include layout="@layout/activity_empty_view"/>
+    </ViewSwitcher>
+    <FrameLayout
+        android:id="@+id/fl_nologin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_title"
+        android:background="@color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:src="@mipmap/icon_user_photo"
+                android:layout_above="@+id/tv_info"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/tv_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="您还没有登录，请登录后查看"
+                android:textSize="16sp"
+                android:textColor="@color/gray_d"
+                android:layout_marginTop="15dp"
+                android:layout_above="@+id/btn_login"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="42dip"
+                android:text="登录/注册"
+                android:layout_marginTop="40dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_gradient_orange"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:textColor="@color/txt_white"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>
