@@ -74,6 +74,7 @@ static NSString *customCellId = @"customCellId";
     if ([StoreTool getLoginStates] ) {
         [self requestMyListData];
     }
+    [self scrollViewDidScroll:self.tableView];
 }
 
 - (void)viewDidLoad {
@@ -251,6 +252,7 @@ static NSString *customCellId = @"customCellId";
             LoginViewController *LoginVC = [[LoginViewController alloc]init];
             LoginVC.type = LogInAppearTypePresent;
             MainNavigationController *LoginNav = [[MainNavigationController alloc]initWithRootViewController:LoginVC];
+            LoginNav.modalPresentationStyle = UIModalPresentationFullScreen;
             [self presentViewController:LoginNav animated:YES completion:nil];
             
         }else{

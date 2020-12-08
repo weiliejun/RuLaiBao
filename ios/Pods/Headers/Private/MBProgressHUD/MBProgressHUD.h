@@ -1,1 +1,1 @@
-link ../../../MBProgressHUD/MBProgressHUD.h
+../../../MBProgressHUD/MBProgressHUD.h

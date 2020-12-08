@@ -204,5 +204,20 @@
     }
 }
 
+#pragma mark - 存储隐私政策的状态
++ (BOOL)storeSerectStatus:(BOOL)isOpen{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setBool:isOpen forKey:@"SerectStatus"];
+    [userDefaults synchronize];
+    return YES;
+}
++ (BOOL)getSerectStatus{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    if ([userDefaults objectForKey:@"SerectStatus"]) {
+        return [userDefaults boolForKey:@"SerectStatus"];
+    }else {
+        return NO;
+    }
+}
 
 @end

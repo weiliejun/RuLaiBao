@@ -1,1 +1,1 @@
-link ../../../SDWebImage/SDWebImage/SDWebImageGIFCoder.h
+../../../SDWebImage/SDWebImage/SDWebImageGIFCoder.h

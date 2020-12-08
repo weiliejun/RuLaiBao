@@ -60,6 +60,7 @@ static NSString *footerViewID = @"detailQuestionFooterView";
     [self requestGroupDetailData];
     self.topicListPage = 1;
     [self requestGroupDetailTopicListDataWithPage:self.topicListPage];
+    [self scrollViewDidScroll:self.tableView];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];

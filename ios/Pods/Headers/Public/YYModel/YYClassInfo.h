@@ -1,1 +1,1 @@
-link ../../../YYModel/YYModel/YYClassInfo.h
+../../../YYModel/YYModel/YYClassInfo.h

@@ -1,1 +1,1 @@
-link ../../../SDWebImage/SDWebImage/SDImageCache.h
+../../../SDWebImage/SDWebImage/SDImageCache.h

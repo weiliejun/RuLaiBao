@@ -26,7 +26,7 @@
     imagePickerVc.isSelectOriginalPhoto = NO;
     imagePickerVc.allowTakePicture = YES; // 在内部显示拍照按钮
     imagePickerVc.allowTakeVideo = NO;   // 在内部显示拍视频按
-    
+    imagePickerVc.allowCameraLocation = NO;
     // 2. Set the appearance
     // 2. 在这里设置imagePickerVc的外观
     imagePickerVc.naviBgColor = [UIColor darkGrayColor];
@@ -66,7 +66,7 @@
         NSLog(@"<<<");
         selectCancelBlock();
     }];
-    
+    imagePickerVc.modalPresentationStyle = UIModalPresentationFullScreen;
     [currentVC presentViewController:imagePickerVc animated:YES completion:nil];
 }
 
@@ -79,12 +79,14 @@
     imagePickerVc.allowPickingMultipleVideo = NO;
     imagePickerVc.showSelectedIndex = NO;
     imagePickerVc.isSelectOriginalPhoto = NO;
+    imagePickerVc.allowCameraLocation = NO;
     [imagePickerVc setDidFinishPickingPhotosHandle:^(NSArray<UIImage *> *photos, NSArray *assets, BOOL isSelectOriginalPhoto) {
         selectAssetBlock(photos,assets);
     }];
     [imagePickerVc setImagePickerControllerDidCancelHandle:^{
         selectCancelBlock();
     }];
+    imagePickerVc.modalPresentationStyle = UIModalPresentationFullScreen;
     [currentVC presentViewController:imagePickerVc animated:YES completion:nil];
 }
 @end

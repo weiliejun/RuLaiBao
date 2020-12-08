@@ -46,6 +46,7 @@
         LoginViewController *logInVC = [LoginViewController new];
         logInVC.type = LogInAppearTypePresent;
         MainNavigationController *logInNav = [[MainNavigationController alloc] initWithRootViewController:logInVC];
+        logInNav.modalPresentationStyle = UIModalPresentationFullScreen;
         if (self.selectedIndex == 3) {
             self.selectedIndex = 0;
         }

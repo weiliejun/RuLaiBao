@@ -272,7 +272,7 @@
     ChooseDateViewController *chooseVC =[[ChooseDateViewController alloc]init];
     self.definesPresentationContext = YES; //self is presenting view controller
     chooseVC.view.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.5];
-    chooseVC.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+    chooseVC.modalPresentationStyle = UIModalPresentationCustom | UIModalPresentationFullScreen;
     chooseVC.modalTransitionStyle =UIModalTransitionStyleCrossDissolve;
     chooseVC.delegate = self;
     [self presentViewController:chooseVC animated:YES completion:nil];
@@ -355,8 +355,11 @@
     textF.delegate = self;
     textF.tag = textTag;
     textF.placeholder = textPlaceholderStr;
-    //设置水印颜色
-    [textF setValue:[UIColor colorWithRed:200/255.0 green:200/255.0 blue:200/255.0 alpha:1.0] forKeyPath:@"_placeholderLabel.textColor"];
+    if(![NSString isBlankString:textPlaceholderStr]){
+        //设置水印颜色
+        NSMutableAttributedString *arrStr = [[NSMutableAttributedString alloc]initWithString:textF.placeholder attributes:@{NSForegroundColorAttributeName : [UIColor colorWithRed:200/255.0 green:200/255.0 blue:200/255.0 alpha:1.0]}];
+        textF.attributedPlaceholder = arrStr;
+    }
     textF.clearButtonMode = UITextFieldViewModeWhileEditing;
 //    if (textTag == 105 || textTag == 106) {
 //        textF.keyboardType = UIKeyboardTypeNumberPad;

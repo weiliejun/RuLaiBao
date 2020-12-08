@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
+   uuid = "4725BAA6-BD18-4D67-B3F7-BA0CFF48BDF8"
    type = "0"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
          <BreakpointContent
+            uuid = "C8C85721-8486-448E-B1EA-36466B61C821"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -16,173 +18,46 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RuLaiBao/Classes/Research/&#x5708;&#x5b50;/&#x8bdd;&#x9898;&#x8be6;&#x60c5;/GroupTopicViewController.m"
-            timestampString = "565666368.501209"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "554"
-            endingLineNumber = "554"
-            landmarkName = "-showTextField:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RuLaiBao/Classes/Research/&#x5708;&#x5b50;/&#x8bdd;&#x9898;&#x8be6;&#x60c5;/GroupTopicViewController.m"
-            timestampString = "565666368.506726"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "574"
-            endingLineNumber = "574"
-            landmarkName = "-rlbInputViewWillHide:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RuLaiBao/Classes/Research/&#x95ee;&#x7b54;/&#x56de;&#x7b54;&#x8be6;&#x60c5;/DetailAnswerHeaderView.m"
-            timestampString = "564655908.377542"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "-setModel:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RuLaiBao/Classes/Research/&#x5708;&#x5b50;/&#x8bdd;&#x9898;&#x8be6;&#x60c5;/GroupTopicCommentModel.m"
-            timestampString = "564900192.577051"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
-            landmarkName = "-convertPhotoRect:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
+            uuid = "77C9F5E1-E70F-4FB2-9E3A-44FCE4BC37DA"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "RuLaiBao/Classes/Research/&#x5708;&#x5b50;/&#x8bdd;&#x9898;&#x8be6;&#x60c5;/GroupTopicViewController.m"
-            timestampString = "565666368.5075999"
+            filePath = "RuLaiBao/Classes/Tools/&#x66f4;&#x65b0;&#x63d0;&#x793a;/RLBCheckVersionTool.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "230"
-            endingLineNumber = "230"
-            landmarkName = "-postRequestDataWithCommentType:Comment:commentId:linkId:toUserId:LinkCommentUrl:imgCommentArr:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RuLaiBao/Classes/Research/&#x5708;&#x5b50;/&#x8bdd;&#x9898;&#x8be6;&#x60c5;/GroupTopicViewController.m"
-            timestampString = "565666368.508359"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "285"
-            endingLineNumber = "285"
-            landmarkName = "-postAddComment:commentId:linkId:toUserId:LinkCommentUrl:ImgCommentUrl:commentType:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RuLaiBao/Classes/Research/&#x5708;&#x5b50;/&#x8bdd;&#x9898;&#x8be6;&#x60c5;/GroupTopicViewController.m"
-            timestampString = "565666368.5090851"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "233"
-            endingLineNumber = "233"
-            landmarkName = "-postRequestDataWithCommentType:Comment:commentId:linkId:toUserId:LinkCommentUrl:imgCommentArr:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RuLaiBao/Classes/Research/&#x5708;&#x5b50;/&#x8bdd;&#x9898;&#x8be6;&#x60c5;/GroupTopicViewController.m"
-            timestampString = "565666368.509847"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "282"
-            endingLineNumber = "282"
-            landmarkName = "-postAddComment:commentId:linkId:toUserId:LinkCommentUrl:ImgCommentUrl:commentType:"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "+checkApplicationVersionWithAppID:"
             landmarkType = "7">
             <Locations>
                <Location
+                  uuid = "77C9F5E1-E70F-4FB2-9E3A-44FCE4BC37DA - f4858b9901756a93"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "-[GroupTopicViewController postAddComment:commentId:linkId:toUserId:LinkCommentUrl:ImgCommentUrl:commentType:]"
+                  symbolName = "__56+[RLBCheckVersionTool checkApplicationVersionWithAppID:]_block_invoke"
                   moduleName = "RuLaiBao"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/qiu/Desktop/RuLaiBao/RuLaiBao/Classes/Research/%E5%9C%88%E5%AD%90/%E8%AF%9D%E9%A2%98%E8%AF%A6%E6%83%85/GroupTopicViewController.m"
-                  timestampString = "580027306.801537"
+                  urlString = "file:///Users/qiu/Desktop/rulaibao/RuLaiBao/ios/RuLaiBao/Classes/Tools/%E6%9B%B4%E6%96%B0%E6%8F%90%E7%A4%BA/RLBCheckVersionTool.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "282"
-                  endingLineNumber = "282"
-                  offsetFromSymbolStart = "233">
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "1180">
                </Location>
                <Location
+                  uuid = "77C9F5E1-E70F-4FB2-9E3A-44FCE4BC37DA - 58e23ca3a8afcdff"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__110-[GroupTopicViewController postAddComment:commentId:linkId:toUserId:LinkCommentUrl:ImgCommentUrl:commentType:]_block_invoke"
+                  symbolName = "__56+[RLBCheckVersionTool checkApplicationVersionWithAppID:]_block_invoke.65"
                   moduleName = "RuLaiBao"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/qiu/Desktop/RuLaiBao/RuLaiBao/Classes/Research/%E5%9C%88%E5%AD%90/%E8%AF%9D%E9%A2%98%E8%AF%A6%E6%83%85/GroupTopicViewController.m"
-                  timestampString = "580027306.804002"
+                  urlString = "file:///Users/qiu/Desktop/rulaibao/RuLaiBao/ios/RuLaiBao/Classes/Tools/%E6%9B%B4%E6%96%B0%E6%8F%90%E7%A4%BA/RLBCheckVersionTool.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "283"
-                  endingLineNumber = "283"
-                  offsetFromSymbolStart = "47">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__destroy_helper_block_.273"
-                  moduleName = "RuLaiBao"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/qiu/Desktop/RuLaiBao/RuLaiBao/Classes/Research/%E5%9C%88%E5%AD%90/%E8%AF%9D%E9%A2%98%E8%AF%A6%E6%83%85/GroupTopicViewController.m"
-                  timestampString = "580027306.80624"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "282"
-                  endingLineNumber = "282"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
                   offsetFromSymbolStart = "12">
                </Location>
             </Locations>
@@ -191,240 +66,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "DF451D7A-9832-4177-A9AF-54E598F3DDE9"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "RuLaiBao/Classes/NetWorkKit/RequestManager.m"
-            timestampString = "580027305.717461"
+            filePath = "RuLaiBao/Classes/Tools/&#x66f4;&#x65b0;&#x63d0;&#x793a;/RLBCheckVersionTool.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "591"
-            endingLineNumber = "591"
-            landmarkName = "-postGroupTopicDetailCommentAddWithAppTopicId:CommentId:LinkId:CommentContent:UserId:ToUserId:LinkCommentUrl:ImgCommentUrl:Success:Error:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RuLaiBao/Classes/Research/&#x5708;&#x5b50;/&#x8bdd;&#x9898;&#x8be6;&#x60c5;/GroupTopicViewController.m"
-            timestampString = "565666368.510653"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "272"
-            endingLineNumber = "272"
-            landmarkName = "-hasPhotoToPostImageComment:commentId:linkId:toUserId:LinkCommentUrl:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RuLaiBao/Classes/NetWorkKit/RequestManager.m"
-            timestampString = "580027305.718462"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1303"
-            endingLineNumber = "1303"
-            landmarkName = "-postMessageGroupApplyDeleteWithUserId:ApplyId:Success:Error:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RuLaiBao/Classes/Research/&#x5708;&#x5b50;/&#x8bdd;&#x9898;&#x8be6;&#x60c5;/GroupTopicCommentModel.m"
-            timestampString = "564900192.577602"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "-initWithDic:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RuLaiBao/Classes/NetWorkKit/RequestManager.m"
-            timestampString = "580027305.7187361"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "606"
-            endingLineNumber = "606"
-            landmarkName = "-postGroupTopicDetailUploadPhoto:TopicId:Success:Error:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RuLaiBao/Classes/Research/&#x5708;&#x5b50;/&#x8bdd;&#x9898;&#x8be6;&#x60c5;/GroupTopicViewController.m"
-            timestampString = "565666368.51153"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "256"
-            endingLineNumber = "256"
-            landmarkName = "-hasPhotoToPostImageComment:commentId:linkId:toUserId:LinkCommentUrl:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RuLaiBao/Classes/Research/&#x5708;&#x5b50;/&#x8bdd;&#x9898;&#x8be6;&#x60c5;/GroupTopicViewController.m"
-            timestampString = "565666368.512284"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "198"
-            endingLineNumber = "198"
-            landmarkName = "-requestGroupDetailCommentListDataWith:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RuLaiBao/Classes/NetWorkKit/RequestManager.m"
-            timestampString = "580027305.719095"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1475"
-            endingLineNumber = "1475"
-            landmarkName = "-NetUpImgWithPostUrl:withImg:WithParameter:WithReturnValeuBlock:WithErrorCodeBlock:"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "+checkApplicationVersionWithAppID:"
             landmarkType = "7">
             <Locations>
                <Location
+                  uuid = "DF451D7A-9832-4177-A9AF-54E598F3DDE9 - f4858b9901756a93"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__100-[RequestManager NetUpImgWithPostUrl:withImg:WithParameter:WithReturnValeuBlock:WithErrorCodeBlock:]_block_invoke"
+                  symbolName = "__56+[RLBCheckVersionTool checkApplicationVersionWithAppID:]_block_invoke"
                   moduleName = "RuLaiBao"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/qiu/Desktop/RuLaiBao/RuLaiBao/Classes/NetWorkKit/RequestManager.m"
-                  timestampString = "580027306.835954"
+                  urlString = "file:///Users/qiu/Desktop/rulaibao/RuLaiBao/ios/RuLaiBao/Classes/Tools/%E6%9B%B4%E6%96%B0%E6%8F%90%E7%A4%BA/RLBCheckVersionTool.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1475"
-                  endingLineNumber = "1475"
-                  offsetFromSymbolStart = "792">
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "1832">
                </Location>
                <Location
+                  uuid = "DF451D7A-9832-4177-A9AF-54E598F3DDE9 - 9e70386976a28763"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__copy_helper_block_.446"
+                  symbolName = "__56+[RLBCheckVersionTool checkApplicationVersionWithAppID:]_block_invoke_2.75"
                   moduleName = "RuLaiBao"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/qiu/Desktop/RuLaiBao/RuLaiBao/Classes/NetWorkKit/RequestManager.m"
-                  timestampString = "580027306.838572"
+                  urlString = "file:///Users/qiu/Desktop/rulaibao/RuLaiBao/ios/RuLaiBao/Classes/Tools/%E6%9B%B4%E6%96%B0%E6%8F%90%E7%A4%BA/RLBCheckVersionTool.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1449"
-                  endingLineNumber = "1449"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__100-[RequestManager NetUpImgWithPostUrl:withImg:WithParameter:WithReturnValeuBlock:WithErrorCodeBlock:]_block_invoke.449"
-                  moduleName = "RuLaiBao"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/qiu/Desktop/RuLaiBao/RuLaiBao/Classes/NetWorkKit/RequestManager.m"
-                  timestampString = "580027306.840746"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1476"
-                  endingLineNumber = "1476"
-                  offsetFromSymbolStart = "51">
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "12">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RuLaiBao/Classes/Research/&#x5708;&#x5b50;/&#x8bdd;&#x9898;&#x8be6;&#x60c5;/GroupTopicViewController.m"
-            timestampString = "565666368.5130889"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "540"
-            endingLineNumber = "540"
-            landmarkName = "-showTextField:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RuLaiBao/Main/MainRLBTabBar.m"
-            timestampString = "565768885.967122"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "MainRLBTabBar"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RuLaiBao/Classes/Research/&#x8bfe;&#x7a0b;/&#x8bfe;&#x7a0b;&#x5217;&#x8868;/CourseViewController.m"
-            timestampString = "568865479.901068"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "243"
-            endingLineNumber = "243"
-            landmarkName = "-tableView:didSelectRowAtIndexPath:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RuLaiBao/Classes/Research/&#x8bfe;&#x7a0b;/&#x8bfe;&#x7a0b;&#x5217;&#x8868;/CourseViewController.m"
-            timestampString = "568865479.902392"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
-            landmarkName = "-requestCourseDataWithPage:typeCode:"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

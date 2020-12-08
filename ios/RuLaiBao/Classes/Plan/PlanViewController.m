@@ -78,6 +78,7 @@
     moreSearchVC.dataSource = self;
     self.moreSearchVC = moreSearchVC;
     UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:moreSearchVC];
+    nav1.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:nav1 animated:YES completion:nil];
 }
 

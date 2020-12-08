@@ -352,14 +352,14 @@
     
     FoldView *foldView2 = [[FoldView alloc]initWithFrame:CGRectMake(0, 0, Width_Window, 44)];
     foldView2.backgroundColor = [UIColor whiteColor];
-    foldView2.titleStr = @"投保须知";
+    foldView2.titleStr = @"产品介绍";
     foldView2.urlStr = @"";
     [self.scrollView addSubview:foldView2];
     self.foldView2 = foldView2;
     
     FoldView *foldView3 = [[FoldView alloc]initWithFrame:CGRectMake(0, 0, Width_Window, 44)];
     foldView3.backgroundColor = [UIColor whiteColor];
-    foldView3.titleStr = @"条款资料";
+    foldView3.titleStr = @"产品条款";
     foldView3.urlStr = @"";
     [self.scrollView addSubview:foldView3];
     self.foldView3 = foldView3;
@@ -440,6 +440,9 @@
             QLWKWebViewController *webVC = [[QLWKWebViewController alloc]init];
             webVC.urlStr = self.infoDict[@"prospectus"];
             webVC.titleStr = @"计划书";
+            webVC.isRightItem2Share = YES;
+            webVC.shareTitle = [NSString stringWithFormat:@"%@",self.infoDict[@"name"]];
+            webVC.shareDesStr = [NSString stringWithFormat:@"%@",self.infoDict[@"recommendations"]];
             [self.navigationController pushViewController:webVC animated:YES];
             
         }else if ([self.infoDict[@"productStatus"] isEqualToString:@"delete"] || [self.infoDict[@"productStatus"] isEqualToString:@"down"]){

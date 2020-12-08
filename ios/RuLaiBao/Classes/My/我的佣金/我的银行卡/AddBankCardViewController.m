@@ -244,7 +244,7 @@
     ChooseBankViewController *chooseVC =[[ChooseBankViewController alloc]init];
     self.definesPresentationContext = YES; //self is presenting view controller
     chooseVC.view.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.5];
-    chooseVC.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+    chooseVC.modalPresentationStyle = UIModalPresentationCustom | UIModalPresentationFullScreen;
     chooseVC.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     chooseVC.delegate = self;
     [self presentViewController:chooseVC animated:YES completion:nil];
@@ -262,7 +262,7 @@
     ChooseAddressViewController *chooseVC =[[ChooseAddressViewController alloc]init];
     self.definesPresentationContext = YES; //self is presenting view controller
     chooseVC.view.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.5];
-    chooseVC.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+    chooseVC.modalPresentationStyle = UIModalPresentationCustom | UIModalPresentationFullScreen;
     chooseVC.modalTransitionStyle =UIModalTransitionStyleCrossDissolve;
     chooseVC.delegate = self;
     [self presentViewController:chooseVC animated:YES completion:nil];
@@ -457,9 +457,12 @@
     textF.tag = textTag;
     textF.placeholder = textPlaceholderStr;
     textF.textAlignment = NSTextAlignmentRight;
+    if(![NSString isBlankString:textPlaceholderStr]){
+        //设置水印颜色
+        NSMutableAttributedString *arrStr = [[NSMutableAttributedString alloc]initWithString:textF.placeholder attributes:@{NSForegroundColorAttributeName : [UIColor colorWithRed:200/255.0 green:200/255.0 blue:200/255.0 alpha:1.0]}];
+        textF.attributedPlaceholder = arrStr;
+    }
     
-    //设置水印颜色
-    [textF setValue:[UIColor colorWithRed:200/255.0 green:200/255.0 blue:200/255.0 alpha:1.0] forKeyPath:@"_placeholderLabel.textColor"];
     textF.clearButtonMode = UITextFieldViewModeWhileEditing;
         if (textTag == 104) {
             textF.keyboardType = UIKeyboardTypeNumberPad;

@@ -26,7 +26,13 @@
     BOOL isIPhoneX = [platform isEqualToString:@"iPhone10,3"] || [platform isEqualToString:@"iPhone10,6"];
      */
     //当横屏时statusBarHeight值为0，所以此方法只能在竖屏时使用
-    BOOL isIPhoneX = [[UIApplication sharedApplication] statusBarFrame].size.height == 44;
+    BOOL isIPhoneX = NO;
+    if (@available(iOS 11.0, *)) {
+        UIWindow *window = [UIApplication sharedApplication].delegate.window;
+        if (window.safeAreaInsets.bottom > 0.0) {
+            isIPhoneX = YES;
+        }
+    }
     return isIPhoneX;
 }
 + (CGFloat)navBarBottom {
@@ -247,7 +253,15 @@ static char kWRBackgroundImageKey;
     }
     self.backgroundView.backgroundColor = color;
 }
-
+- (void)insertSubview:(UIView *)view atIndex:(NSInteger)index {
+    [super insertSubview:view atIndex:index];
+    if ([view isKindOfClass:NSClassFromString(@"_UIBarBackground")]) {
+        view.clipsToBounds = YES;
+        if (![view.subviews containsObject:self.backgroundView]) {
+            [view insertSubview:self.backgroundView atIndex:0];
+        }
+    }
+}
 - (void)wr_keyboardDidShow {
     [self wr_restoreUIBarBackgroundFrame];
 }
@@ -435,6 +449,12 @@ static int wrPushDisplayCount = 0;
 }
 
 - (void)updateNavigationBarWithFromVC:(UIViewController *)fromVC toVC:(UIViewController *)toVC progress:(CGFloat)progress {
+    if ([toVC isKindOfClass:NSClassFromString(@"MainNavigationController")] && [fromVC isKindOfClass:NSClassFromString(@"MainTabBarController")]) {
+        return;
+    }
+    if ([fromVC isKindOfClass:NSClassFromString(@"MainNavigationController")] && [toVC isKindOfClass:NSClassFromString(@"MainTabBarController")]) {
+        return;
+    }
     if (![WRNavigationBar needUpdateNavigationBar:toVC]) {
         return;
     }

@@ -388,6 +388,9 @@
             QLWKWebViewController *webVC = [[QLWKWebViewController alloc]init];
             webVC.urlStr = self.infoDict[@"prospectus"];
             webVC.titleStr = @"计划书";
+            webVC.isRightItem2Share = YES;
+            webVC.shareTitle = [NSString stringWithFormat:@"%@",self.infoDict[@"name"]];
+            webVC.shareDesStr = [NSString stringWithFormat:@"%@",self.infoDict[@"recommendations"]];
             [self.navigationController pushViewController:webVC animated:YES];
 
         } else if ([self.infoDict[@"productStatus"] isEqualToString:@"delete"] || [self.infoDict[@"productStatus"] isEqualToString:@"down"]){

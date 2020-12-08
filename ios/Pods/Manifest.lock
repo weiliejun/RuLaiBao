@@ -32,8 +32,19 @@ DEPENDENCIES:
   - MJRefresh (~> 3.1.15)
   - SDCycleScrollView (~> 1.75)
   - SDWebImage (~> 4.2.3)
-  - TYAttributedLabel (~> 2.6.2)
+  - TYAttributedLabel (~> 2.6.6)
   - YYModel (~> 1.0.4)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - SDCycleScrollView
+    - SDWebImage
+    - TYAttributedLabel
+    - YYModel
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -45,6 +56,6 @@ SPEC CHECKSUMS:
   TYAttributedLabel: cb8fc910d97eb5224936d4f692a78e042af691b2
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: fcc884e4748f7603323389aee0bdad515ef90383
+PODFILE CHECKSUM: 0f1621d8bebb856ee32f4eff50ba8b77d942fe69
 
-COCOAPODS: 1.4.0.beta.2
+COCOAPODS: 1.9.3

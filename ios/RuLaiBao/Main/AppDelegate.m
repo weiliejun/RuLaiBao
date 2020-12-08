@@ -103,7 +103,8 @@
         lockVC.fromVCType = FromVCTypePresent;
         lockVC.titleStr = @"解锁";
         MainTabBarController *mainTabBarC =  (MainTabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController;
-        [mainTabBarC presentViewController:lockVC animated:YES completion:nil];
+        lockVC.modalPresentationStyle = UIModalPresentationFullScreen;
+        [mainTabBarC presentViewController:lockVC animated:NO completion:nil];
     }
 }
 - (void)applicationDidBecomeActive:(UIApplication *)application {
@@ -184,7 +185,7 @@
         switch (platformType)
         {
             case SSDKPlatformTypeWechat:
-                [appInfo  SSDKSetupWeChatByAppId:@"wx3af2f4d0e401bee2" appSecret:@"bcd2a062af4fb54a59b09a784a0e4b33"];
+                [appInfo SSDKSetupWeChatByAppId:@"wx04c51cddfc11bccd" appSecret:@"96f9a4b36790edbd403080e0c16c7968"];
                 break;
             case SSDKPlatformTypeQQ:
                 [appInfo SSDKSetupQQByAppId:@"1106879880"

@@ -1,1 +1,1 @@
-link ../../../TYAttributedLabel/TYAttributedLabelDemo/TYAttributedLabel/TYTextStorageProtocol.h
+../../../TYAttributedLabel/TYAttributedLabelDemo/TYAttributedLabel/TYTextStorageProtocol.h

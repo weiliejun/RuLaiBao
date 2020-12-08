@@ -111,7 +111,7 @@
     [bottomView addSubview:ageImage];
     
     UILabel *ageLabel2 = [[UILabel alloc] initWithFrame:CGRectMake(ageImage.right+2, ageLabel.bottom, 30 , 20)];
-    ageLabel2.text = @"年龄";
+    ageLabel2.text = @"投保年龄";
     ageLabel2.textColor = [UIColor customDetailColor];
     ageLabel2.font = [UIFont systemFontOfSize:14];
     ageLabel2.textAlignment = NSTextAlignmentLeft;

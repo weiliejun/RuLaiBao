@@ -113,6 +113,7 @@
     moreSearchVC.dataSource = self;
     self.moreSearchVC = moreSearchVC;
     UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:moreSearchVC];
+    nav1.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:nav1 animated:YES completion:nil];
 }
 
@@ -159,7 +160,10 @@
         if ([StoreTool getCheckStatusForSuccess]){
             SearchListModel *model = self.suggestionArr[indexPath.row];
             QLWKWebViewController *webVC = [[QLWKWebViewController alloc]init];
-            webVC.urlStr = model.prospectus;
+            webVC.urlStr = [NSString stringWithFormat:@"%@",model.prospectus];
+            webVC.isRightItem2Share = YES;
+            webVC.shareTitle = [NSString stringWithFormat:@"%@",model.name];
+            webVC.shareDesStr = [NSString stringWithFormat:@"%@",model.recommendations];
             webVC.titleStr = @"计划书";
             [searchViewController.navigationController pushViewController:webVC animated:YES];
         }else{
@@ -318,6 +322,9 @@
             ProspectusModel *model = self.infoArr[indexPath.row];
             QLWKWebViewController *webVC = [[QLWKWebViewController alloc]init];
             webVC.urlStr = model.prospectus;
+            webVC.isRightItem2Share = YES;
+            webVC.shareTitle = [NSString stringWithFormat:@"%@",model.name];
+            webVC.shareDesStr = [NSString stringWithFormat:@"%@",model.recommendations];
             webVC.titleStr = @"计划书";
             [self.navigationController pushViewController:webVC animated:YES];
         }else {

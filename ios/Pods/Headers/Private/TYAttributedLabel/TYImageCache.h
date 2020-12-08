@@ -1,1 +1,1 @@
-link ../../../TYAttributedLabel/TYAttributedLabelDemo/TYAttributedLabel/TYImageCache.h
+../../../TYAttributedLabel/TYAttributedLabelDemo/TYAttributedLabel/TYImageCache.h

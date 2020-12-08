@@ -19,6 +19,7 @@
         LoginViewController *loginVC = [[LoginViewController alloc]init];
         loginVC.type = LogInAppearTypePresent;
         MainNavigationController *loginNav = [[MainNavigationController alloc]initWithRootViewController:loginVC];
+        loginNav.modalPresentationStyle = UIModalPresentationFullScreen;
         [viewController presentViewController:loginNav animated:YES completion:nil];
     }
 }

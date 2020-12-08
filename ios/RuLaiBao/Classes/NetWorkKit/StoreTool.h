@@ -45,6 +45,8 @@
 + (BOOL)storeEyeStatus:(BOOL)isOpen;
 + (BOOL)getEyeStatus;
 
-
+//存储隐私政策的状态
++ (BOOL)storeSerectStatus:(BOOL)isOpen;
++ (BOOL)getSerectStatus;
 
 @end

@@ -1,1 +1,1 @@
-link ../../../TYAttributedLabel/TYAttributedLabelDemo/TYAttributedLabel/NSMutableAttributedString+TY.h
+../../../TYAttributedLabel/TYAttributedLabelDemo/TYAttributedLabel/NSMutableAttributedString+TY.h

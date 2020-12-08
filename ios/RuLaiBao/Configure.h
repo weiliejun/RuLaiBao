@@ -55,10 +55,10 @@
 
 // 开发环境--> 请求头设置
 /** 正式环境 */
-//#define RequestHeader @"app.ksghi.com"
+#define RequestHeader @"app.ksghi.com"
 
 //* 内网测试环境
-#define RequestHeader  @"192.168.1.82:93"
+//#define RequestHeader  @"192.168.1.82:93"
 
 /** 外网测试环境 */
 //#define RequestHeader  @"123.126.102.219:30093"

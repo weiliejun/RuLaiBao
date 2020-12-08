@@ -483,7 +483,7 @@ static NSString *AfterPostSuccessPOP = @"popToVC";
     RegisterChooseCityController *chooseVC =[[RegisterChooseCityController alloc]init];
     self.definesPresentationContext = YES;
     chooseVC.view.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.5];
-    chooseVC.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+    chooseVC.modalPresentationStyle = UIModalPresentationCustom | UIModalPresentationFullScreen;
     chooseVC.modalTransitionStyle =UIModalTransitionStyleCrossDissolve;
     chooseVC.chooseDelegate =self;
     [self.navigationController presentViewController:chooseVC animated:YES completion:nil];

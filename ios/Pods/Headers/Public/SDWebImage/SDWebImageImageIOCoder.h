@@ -1,1 +1,1 @@
-link ../../../SDWebImage/SDWebImage/SDWebImageImageIOCoder.h
+../../../SDWebImage/SDWebImage/SDWebImageImageIOCoder.h

@@ -81,12 +81,23 @@ static NSString *reusableViewCell = @"reusableViewCell";
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 11.0) { // iOS 11
         UINavigationBar *navBar = self.navigationController.navigationBar;
         navBar.layoutMargins = UIEdgeInsetsZero;
-        CGFloat space = 8;
+//        CGFloat space = 8;
         for (UIView *subview in navBar.subviews) {
-            if ([NSStringFromClass(subview.class) containsString:@"ContentView"]) {
-                subview.layoutMargins = UIEdgeInsetsMake(0, space, 0, space); // Fix cancel button width is modified
+            if ([NSStringFromClass([subview class]) containsString:@"_UINavigationBarContentView"]) {
+                if ([UIDevice currentDevice].systemVersion.floatValue >= 13.0) {
+                    UIEdgeInsets margins = subview.layoutMargins;
+                    subview.frame = CGRectMake(-margins.left, -margins.top, margins.left + margins.right + subview.frame.size.width, margins.top + margins.bottom + subview.frame.size.height);
+//                    subview.layoutMargins = UIEdgeInsetsMake(0, space, 0, space);
+                } else {
+                    subview.layoutMargins = UIEdgeInsetsZero;
+                }
                 break;
             }
+            
+//            if ([NSStringFromClass(subview.class) containsString:@"ContentView"]) {
+//                subview.layoutMargins = UIEdgeInsetsMake(0, space, 0, space); // Fix cancel button width is modified
+//                break;
+//            }
         }
         _searchBar.py_width = self.view.py_width - self.cancelButtonWidth - PYSEARCH_MARGIN * 3 - 8;
         _searchBar.py_height = self.view.py_width > self.view.py_height ? 24 : 30;

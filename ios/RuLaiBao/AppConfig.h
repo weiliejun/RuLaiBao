@@ -18,7 +18,16 @@
 #define Height_Statusbar_HotSpot ((Height_Statusbar == 40) ? (20):(0))
 
 /** 底部home Bar的高度 */
-#define IS_IPHONEX (((Height_Statusbar == 44)||(Height_Window == 812 || Height_Window == 896))?YES:NO)
+#define IS_IPHONEX ({\
+BOOL isiPhoneX = NO;\
+if (@available(iOS 11.0, *)) {\
+UIWindow *window = [UIApplication sharedApplication].delegate.window;\
+if (window.safeAreaInsets.bottom > 0.0) {\
+isiPhoneX = YES;\
+}\
+}\
+isiPhoneX;\
+})
 #define Height_View_HomeBar (IS_IPHONEX ? (34):(0))
 #define Height_Statusbar_NavBar (IS_IPHONEX ? (88):(64))
 /**安全域 总高度 - 状态栏 - 底部home Bar*/

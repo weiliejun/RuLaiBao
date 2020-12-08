@@ -104,9 +104,9 @@ typedef NS_ENUM(NSInteger, LockType) {
 #pragma mark -- 适配iOS 11
     adjustsScrollViewInsets_NO(tableView, self);
     
-    self.unloginArr = @[@"联系客服",@"平台公告",@"服务协议",@"关于如来保"];
-    self.closeInfoArr = @[@[@"手势密码",@"修改登录密码"],@[@"推荐App给好友",@"联系客服",@"平台公告",@"服务协议",@"关于如来保"]];
-    self.openInfoArr =@[@[@"手势密码",@"修改手势密码",@"修改登录密码"],@[@"推荐App给好友",@"联系客服",@"平台公告",@"服务协议",@"关于如来保"]];
+    self.unloginArr = @[@"联系客服",@"平台公告",@"服务协议",@"隐私政策",@"关于如来保"];
+    self.closeInfoArr = @[@[@"手势密码",@"修改登录密码"],@[@"推荐App给好友",@"联系客服",@"平台公告",@"服务协议",@"隐私政策",@"关于如来保"]];
+    self.openInfoArr =@[@[@"手势密码",@"修改手势密码",@"修改登录密码"],@[@"推荐App给好友",@"联系客服",@"平台公告",@"服务协议",@"隐私政策",@"关于如来保"]];
 }
 
 #pragma mark - 退出登录
@@ -204,7 +204,7 @@ typedef NS_ENUM(NSInteger, LockType) {
             }
             
             [cell addSubview:self.switchOK];
-        }else if(indexPath.section == 1 && indexPath.row == 4){
+        }else if(indexPath.section == 1 && indexPath.row == 5){
             //显示版本号
             NSDictionary *infoDict = [[NSBundle mainBundle] infoDictionary];
             NSString *currentVersion = [infoDict objectForKey:@"CFBundleShortVersionString"];
@@ -218,7 +218,7 @@ typedef NS_ENUM(NSInteger, LockType) {
         }
     }else{
         //未登录
-        if (indexPath.row == 3) {
+        if (indexPath.row == 4) {
             //显示版本号
             NSDictionary *infoDict = [[NSBundle mainBundle] infoDictionary];
             NSString *currentVersion = [infoDict objectForKey:@"CFBundleShortVersionString"];
@@ -293,7 +293,6 @@ typedef NS_ENUM(NSInteger, LockType) {
                     break;
                 case 2:{
                     //修改登录密码
-                    //修改登录密码
                     ModifyPwdViewController *ModifyPwdVC = [[ModifyPwdViewController alloc]init];
                     [self.navigationController pushViewController:ModifyPwdVC animated:YES];
                     
@@ -327,20 +326,26 @@ typedef NS_ENUM(NSInteger, LockType) {
                     //服务协议
                     QLWKWebViewController *webVC = [[QLWKWebViewController alloc]init];
                     webVC.titleStr = @"服务协议";
-                    webVC.urlStr = [NSString stringWithFormat:@"%@://%@/app/service/agreement", webHttp, RequestHeader];;
+                    webVC.urlStr = [NSString stringWithFormat:@"%@://%@/app/service/agreement", webHttp, RequestHeader];
                     [self.navigationController pushViewController:webVC animated:YES];
                 }
                     break;
                 case 4:{
+                    //隐私政策
+                    QLWKWebViewController *webVC = [[QLWKWebViewController alloc]init];
+                    webVC.titleStr = @"隐私政策";
+                    webVC.urlStr = [NSString stringWithFormat:@"%@://%@/app/service/privacyPolicyStatement", webHttp, RequestHeader];
+                    [self.navigationController pushViewController:webVC animated:YES];
+                }
+                    break;
+                case 5:{
                     //关于如来保
                     QLWKWebViewController *webVC = [[QLWKWebViewController alloc]init];
                     webVC.titleStr = @"关于如来保";
                     webVC.urlStr = [NSString stringWithFormat:@"%@://%@/app/about/us", webHttp, RequestHeader];
                     [self.navigationController pushViewController:webVC animated:YES];
                 }
-                    
                     break;
-                    
                 default:
                     break;
             }
@@ -370,6 +375,14 @@ typedef NS_ENUM(NSInteger, LockType) {
                 
                 break;
             case 3:{
+                //隐私政策
+                QLWKWebViewController *webVC = [[QLWKWebViewController alloc]init];
+                webVC.titleStr = @"隐私政策";
+                webVC.urlStr = [NSString stringWithFormat:@"%@://%@/app/service/privacyPolicyStatement", webHttp, RequestHeader];
+                [self.navigationController pushViewController:webVC animated:YES];
+            }
+                break;
+            case 4:{
                 //关于如来保
                 QLWKWebViewController *webVC = [[QLWKWebViewController alloc]init];
                 webVC.titleStr = @"关于如来保";

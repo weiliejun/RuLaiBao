@@ -34,7 +34,11 @@
 #import "LockViewController.h"
 /** 无数据 */
 #import "QLScrollViewExtension.h"
-
+/** 导航条渐变 */
+#import "WRNavigationBar.h"
+/** 隐私协议 */
+#import "RLBAlertViewController.h"
+#import "MainNavigationController.h"
 
 static NSString *sectionHeaderId = @"sectionHeaderId";
 
@@ -75,7 +79,7 @@ static NSString *sectionHeaderId = @"sectionHeaderId";
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    [self.navigationController setNavigationBarHidden:YES animated:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
     
     [self.cycleView adjustWhenControllerViewWillAppera];
     [self requestHomeListData];
@@ -96,7 +100,8 @@ static NSString *sectionHeaderId = @"sectionHeaderId";
         lockVC.lockModel = LockModelUnLock;
         lockVC.fromVCType = FromVCTypePresent;
         lockVC.titleStr = @"解锁";
-        [SELFVC.navigationController presentViewController:lockVC animated:YES completion:nil];
+        lockVC.modalPresentationStyle = UIModalPresentationFullScreen;
+        [SELFVC presentViewController:lockVC animated:NO completion:nil];
     }
 }
 
@@ -110,13 +115,29 @@ static NSString *sectionHeaderId = @"sectionHeaderId";
     self.sellArray = [NSMutableArray array];
     
     [self createUI];
-    
-    /**
-     *  在此地方添加此方法主要是为了解决向下滑出IOS系统通知、向上滑出系统设置，都会弹出解锁页面此问题
-     */
-    [self tanchuLock];
+    // 当为YES的时候说明点击过隐私协议
+    if ([StoreTool getSerectStatus]) {
+        [self tanchuLock];
+    }else{
+        [self secretCetegray];
+    }
 }
-
+-(void)secretCetegray{
+    // 为NO的时候才会弹出隐私协议，理论上只有一次
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        
+        //弹出隐私协议
+        RLBAlertViewController *alertVC = [[RLBAlertViewController alloc]init];
+        [alertVC setRLBAlertVCHide:^{
+            // 点击完成的时候要调用手势
+            [self tanchuLock];
+        }];
+        MainNavigationController *alertNav = [[MainNavigationController alloc]initWithRootViewController:alertVC];
+        alertNav.modalPresentationStyle = UIModalPresentationFullScreen | UIModalPresentationCustom;
+        [self presentViewController:alertNav animated:YES completion:nil];
+    });
+}
 #pragma mark - 请求首页数据
 - (void)requestHomeListData{
     WeakSelf
@@ -412,6 +433,10 @@ static NSString *sectionHeaderId = @"sectionHeaderId";
 
 #pragma mark - 3> 重磅推荐
 - (void)createPageView{
+    if (self.bgPageView != nil) {
+        [self.bgPageView removeFromSuperview];
+    }
+    
     UIView *bgPageView = [[UIView alloc]initWithFrame:CGRectMake(0, self.BtnView.bottom+10, Width_Window, 160)];
     bgPageView.backgroundColor = [UIColor whiteColor];
     [self.headerView addSubview:bgPageView];

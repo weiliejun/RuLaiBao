@@ -37,7 +37,9 @@ typedef NS_ENUM (NSInteger, MyButtonType) {
 //    self.navigationItem.title = @"登录";
     self.view.backgroundColor = [UIColor whiteColor];
     
+    [self wr_setNavBarBarTintColor:[UIColor whiteColor]];
     [self wr_setNavBarTitleColor:[UIColor clearColor]];
+    [self wr_setNavBarTintColor:[UIColor customNavBarColor]];
     [self wr_setNavBarBackgroundAlpha:0];
     
     [self createUI];
@@ -49,6 +51,7 @@ typedef NS_ENUM (NSInteger, MyButtonType) {
     [self wr_setNavBarShadowImageHidden:YES];
 }
 -(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
     [self wr_setNavBarShadowImageHidden:NO];
     /** 此处是为了解决WRNavigationBar 崩溃的bug*/
     [[NSNotificationCenter defaultCenter] removeObserver:self.navigationController.navigationBar name:UIKeyboardDidShowNotification object:nil];

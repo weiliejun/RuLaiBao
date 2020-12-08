@@ -418,7 +418,7 @@
     if(sourceType == UIImagePickerControllerSourceTypeCamera){
         imagePickerController.cameraDevice = UIImagePickerControllerCameraDeviceRear;
     }
-    
+    imagePickerController.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:imagePickerController animated:YES completion:nil];
 }
 

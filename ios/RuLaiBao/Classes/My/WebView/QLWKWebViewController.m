@@ -10,6 +10,7 @@
 #import <WebKit/WebKit.h>
 #import "Configure.h"
 #import "AppDelegate.h"
+#import "CustomShareUI.h"
 //dealloc
 #import "WeakScriptMessageDelegate.h"
 
@@ -31,6 +32,10 @@
 //    [self.navigationController setNavigationBarHidden:NO animated:YES];
     self.view.backgroundColor = [UIColor customBackgroundColor];
     self.navigationItem.title = self.titleStr;
+    if (self.isRightItem2Share) {
+        UIBarButtonItem *shareItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"share"] style:UIBarButtonItemStylePlain target:self action:@selector(toShareProduct)];
+        self.navigationItem.rightBarButtonItem = shareItem;
+    }
     
     WKWebView *webView = [[WKWebView alloc]initWithFrame:CGRectMake(0, Height_Statusbar_NavBar, Width_Window, Height_Window - Height_Statusbar_NavBar)];
     webView.UIDelegate = self;
@@ -58,7 +63,14 @@
     
     self.webViewGoBackStatus = WebViewCanGoBackNO;
 }
-
+#pragma mark - 分享
+- (void)toShareProduct{
+    //调用自定义分享
+    NSString *urlStr = [NSString stringWithFormat:@"%@",self.urlStr];
+    NSString *sTitle = self.shareTitle.length !=0 ? self.shareTitle :self.title;
+    NSString *sDes = self.shareDesStr.length !=0 ? self.shareDesStr :self.title;
+    [CustomShareUI shareWithUrl:urlStr Title:sTitle DesStr:sDes];
+}
 //返回
 -(void)itemPopBack{
     if (self.webViewGoBackStatus == WebViewCanGoBackYES) {

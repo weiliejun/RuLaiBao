@@ -25,6 +25,9 @@ typedef NS_ENUM(NSInteger, WebViewTitleCanTransform) {
 
 @property (nonatomic, copy) NSString *urlStr;
 @property (nonatomic, copy) NSString *titleStr;
+@property (nonatomic, assign) BOOL isRightItem2Share;
+@property (nonatomic, copy) NSString *shareTitle;
+@property (nonatomic, copy) NSString *shareDesStr;
 
 /** default NO */
 @property (nonatomic, assign) WebViewCanGoBack webViewGoBackStatus;
